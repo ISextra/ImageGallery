@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/index.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/styles/index.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/styles/normalize.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/styles/vars.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/image-gallary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ImageGallery.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +52,7 @@
       <updated>1678895959373</updated>
       <workItem from="1678895960486" duration="1699000" />
       <workItem from="1678897685212" duration="899000" />
-      <workItem from="1678908241944" duration="2900000" />
+      <workItem from="1678908241944" duration="3536000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -76,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678897213079</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design">
+      <created>1678912748345</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678912748345</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +87,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[TASK-1] Развернуть Git репозиторий для проекта" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-1] Развернуть Git репозиторий для проекта" />
+    <MESSAGE value="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design" />
   </component>
 </project>
