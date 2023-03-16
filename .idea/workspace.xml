@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-3] Реализация общего layout приложения (Разделить на основные блоки);&#10;Исправление ошибки ESLint: TypeError: this.libOptions.parse is not a function">
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-3] header css style fix">
+      <change afterPath="$PROJECT_DIR$/src/entities/Filters/Filters.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Filters/Filters.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Filters/NameFilter/NameFilter.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Filters/NameFilter/NameFilter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/styles/normalize.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/normalize.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Header/Header.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Header/Header.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Header/Title/Title.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Header/Title/Title.module.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +73,7 @@
       <workItem from="1678964899663" duration="768000" />
       <workItem from="1678965678763" duration="629000" />
       <workItem from="1678966319057" duration="5625000" />
-      <workItem from="1678974223636" duration="566000" />
+      <workItem from="1678974223636" duration="4498000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -92,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678974463608</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[TASK-3] header css style fix">
+      <created>1678974932871</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678974932871</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +124,8 @@
     <MESSAGE value="[TASK-1] Развернуть Git репозиторий для проекта" />
     <MESSAGE value="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design" />
     <MESSAGE value="[TASK-3] Реализация общего layout приложения (Разделить на основные блоки);&#10;Исправление ошибки ESLint: TypeError: this.libOptions.parse is not a function" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-3] Реализация общего layout приложения (Разделить на основные блоки);&#10;Исправление ошибки ESLint: TypeError: this.libOptions.parse is not a function" />
+    <MESSAGE value="[TASK-3] header css style fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-3] header css style fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
