@@ -1,3 +1,4 @@
+export {}
 // type CourseCategories =
 //     'base-1' |
 //     'base-2' |

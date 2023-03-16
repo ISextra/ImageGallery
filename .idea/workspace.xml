@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design">
-      <change afterPath="$PROJECT_DIR$/src/app/providers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/providers/with-router.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Header/Header.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Header/Title/Title.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Header/Title/Title.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/ImageList/ImageList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/parcel.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-3] Реализация общего layout приложения (Разделить на основные блоки);&#10;Исправление ошибки ESLint: TypeError: this.libOptions.parse is not a function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/styles/normalize.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/normalize.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,22 +30,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/isolovev/WebstormProjects/image-gallery",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "C:\\Users\\isolovev\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/isolovev/WebstormProjects/image-gallery&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\isolovev\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\Filter\DropdownFilter" />
@@ -83,6 +69,7 @@
       <workItem from="1678964899663" duration="768000" />
       <workItem from="1678965678763" duration="629000" />
       <workItem from="1678966319057" duration="5625000" />
+      <workItem from="1678974223636" duration="566000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -98,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678912748345</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[TASK-3] Реализация общего layout приложения (Разделить на основные блоки);&#10;Исправление ошибки ESLint: TypeError: this.libOptions.parse is not a function">
+      <created>1678974463608</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678974463608</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +112,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[TASK-1] Развернуть Git репозиторий для проекта" />
     <MESSAGE value="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design" />
+    <MESSAGE value="[TASK-3] Реализация общего layout приложения (Разделить на основные блоки);&#10;Исправление ошибки ESLint: TypeError: this.libOptions.parse is not a function" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-3] Реализация общего layout приложения (Разделить на основные блоки);&#10;Исправление ошибки ESLint: TypeError: this.libOptions.parse is not a function" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

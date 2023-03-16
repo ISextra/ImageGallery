@@ -3,7 +3,7 @@ import classes from './ThemeButton.module.sass'
 
 const ThemeButton: React.FC = () => {
     return (
-        <button className={classes.LightModeBtn}>
+        <button className={classes.ThemeBtn}>
             -(x)-
         </button>
     );
