@@ -1,15 +1,14 @@
 import React from 'react';
 import './index.sass';
-import { Routes, Route, Link } from "react-router-dom";
+import { withProviders } from "./providers";
+import { Header } from '../entities/Header/Header';
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                ImageGallery
-            </header>
+            <Header/>
         </div>
     );
 }
 
-export default App;
+export default withProviders(App);

@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design">
+      <change afterPath="$PROJECT_DIR$/src/app/providers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/providers/with-router.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Header/Header.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Header/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Header/Title/Title.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Header/Title/Title.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/ImageList/ImageList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/parcel.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/styles/normalize.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/normalize.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="23604f0af6b1f7e1c5931ae882738e183e33bad5" />
+        <entry key="$PROJECT_DIR$" value="c1609770b4679d16aef2e51ebd141c8c58d62d89" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,15 +49,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/sabin/WebstormProjects/calculator-react",
+    "last_opened_file_path": "C:/Users/isolovev/WebstormProjects/image-gallery",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.language",
-    "ts.external.directory.path": "C:\\Users\\sabin\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "C:\\Users\\isolovev\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\Filter\DropdownFilter" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +76,13 @@
       <workItem from="1678895960486" duration="1699000" />
       <workItem from="1678897685212" duration="899000" />
       <workItem from="1678908241944" duration="3536000" />
+      <workItem from="1678956513402" duration="3197000" />
+      <workItem from="1678959912896" duration="3028000" />
+      <workItem from="1678963001420" duration="1083000" />
+      <workItem from="1678964095860" duration="790000" />
+      <workItem from="1678964899663" duration="768000" />
+      <workItem from="1678965678763" duration="629000" />
+      <workItem from="1678966319057" duration="5625000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -89,5 +119,9 @@
     <MESSAGE value="[TASK-1] Развернуть Git репозиторий для проекта" />
     <MESSAGE value="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design" />
     <option name="LAST_COMMIT_MESSAGE" value="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
