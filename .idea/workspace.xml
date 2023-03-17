@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-3] NameFilter основа">
-      <change afterPath="$PROJECT_DIR$/src/entities/Filters/DropdownInputDate/DropdownInputDate.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Filters/DropdownInputDate/DropdownInputDate.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Filters/DropdownSelectFilter/DropdownSelectFilter.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Filters/DropdownSelectFilter/DropdownSelectFilter.tsx" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-6] Реализация UI компонента с фильтров по датам (за основу взять компонент Dropdown)">
+      <change afterPath="$PROJECT_DIR$/src/app/providers/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/constants/links.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/styles/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/index.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/styles/normalize.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/normalize.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/Filters.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Filters/Filters.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/providers/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Filters/DropdownInputDate/DropdownInputDate.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Filters/DropdownInputDate/DropdownInputDate.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Filters/DropdownInputDate/DropdownInputDate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Filters/DropdownInputDate/DropdownInputDate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Filters/DropdownSelectFilter/DropdownSelectFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Filters/DropdownSelectFilter/DropdownSelectFilter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/Filters/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Filters/Filters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/NameFilter/NameFilter.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Filters/NameFilter/NameFilter.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/NameFilter/NameFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Filters/NameFilter/NameFilter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Header/Title/Title.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Header/Title/Title.module.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
       <workItem from="1678965678763" duration="629000" />
       <workItem from="1678966319057" duration="5625000" />
       <workItem from="1678974223636" duration="4573000" />
-      <workItem from="1679047122718" duration="15015000" />
+      <workItem from="1679047122718" duration="18554000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -115,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678978897765</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[TASK-6] Реализация UI компонента с фильтров по датам (за основу взять компонент Dropdown)">
+      <created>1679063483547</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679063483547</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +142,8 @@
     <MESSAGE value="[TASK-3] Реализация общего layout приложения (Разделить на основные блоки);&#10;Исправление ошибки ESLint: TypeError: this.libOptions.parse is not a function" />
     <MESSAGE value="[TASK-3] header css style fix" />
     <MESSAGE value="[TASK-3] NameFilter основа" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-3] NameFilter основа" />
+    <MESSAGE value="[TASK-6] Реализация UI компонента с фильтров по датам (за основу взять компонент Dropdown)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-6] Реализация UI компонента с фильтров по датам (за основу взять компонент Dropdown)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

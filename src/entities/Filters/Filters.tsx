@@ -8,14 +8,14 @@ export const Filters: React.FC = () => {
     return (
         <div className={classes.Filters}>
             <NameFilter/>
-            <DropdownSelectFilter
-                content={"Автор"}
-            />
-            <DropdownSelectFilter
-                content={"Место"}
-            />
+            {/*<DropdownSelectFilter*/}
+            {/*    content="Автор"*/}
+            {/*/>*/}
+            {/*<DropdownSelectFilter*/}
+            {/*    content="Место"*/}
+            {/*/>*/}
             <DropdownInputDate
-                content={"Дата"}
+                content="Дата"
             />
         </div>
     );

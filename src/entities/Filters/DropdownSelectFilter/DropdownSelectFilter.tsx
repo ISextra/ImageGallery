@@ -3,9 +3,17 @@ import classes from "./DropdownSelectFilter.module.sass";
 
 interface DropdownFilterProps {
     content: string;
+    options: DropdownOptionDescription[]; // Array<DropdownOptionDescription>
 }
 
-const DropdownSelectFilter: React.FC<DropdownFilterProps> = ({content}) => {
+interface DropdownOptionDescription {
+    text: string,
+    color: string,
+}
+
+const DropdownSelectFilter: React.FC<DropdownFilterProps> = (props) => {
+    const {content, options} = props;
+
     const [DropdownFilterValue, setDropdownFilterValue] = useState("");
 
     return (
@@ -23,12 +31,6 @@ const DropdownSelectFilter: React.FC<DropdownFilterProps> = ({content}) => {
             >
                 {content}
             </option>
-            <option
-                value="grapefruit"
-            >Grapefruit</option>
-            <option value="lime">Lime</option>
-            <option value="coconut">Coconut</option>
-            <option value="mango">Mango</option>
         </select>
     );
 };

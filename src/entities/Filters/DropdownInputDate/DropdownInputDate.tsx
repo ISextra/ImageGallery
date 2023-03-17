@@ -11,11 +11,9 @@ const DropdownInputDate: React.FC<DropdownFilterProps> = ({content}) => {
     const [DropdownFilterDateEnd, setDropdownFilterDateEnd] = useState("");
 
     return (
-        <div
-            className={classes.DropdownInputDate}
-        >
+        <div style={{position:"relative", width:"100%"}}>
             <button
-                className={classes.DropdownInputDateButton}
+                className={classes.DropdownInputDate}
                 onClick={() => setIsNeedShowInputs(!isNeedShowInputs)}
             >
                 {
