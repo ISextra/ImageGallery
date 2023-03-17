@@ -1,0 +1,53 @@
+.DropdownInputDate
+  display: flex
+  flex-wrap: wrap
+  align-content: start
+  border: 2px solid white
+  border-radius: 5px
+  width: 265px
+  height: 45px
+  background: #0C0C0C
+  color: #FFFFFF
+  font-size: 15px
+  opacity: 0.7
+  &Button
+    display: flex
+    padding-left: 10px
+    width: 265px
+    height: 45px
+    align-content: start
+    border: none
+    vertical-align: center
+    color: #FFFFFF
+    font-size: 15px
+
+.DropdownOption
+  display: flex
+  position: relative
+  align-items: center
+  justify-content: center
+  border: 2px solid white
+  border-radius: 5px
+  width: 265px
+  height: 85px
+  background: #0C0C0C
+  color: #FFFFFF
+  font-size: 15px
+  &Input
+    display: flex
+    align-content: center
+    border: 2px solid white
+    border-radius: 5px
+    padding: 15px
+    width: 95px
+    height: 45px
+    background: white
+    color: black
+    font-size: 13px
+
+@media screen and (max-width: 320px)
+  .DropdownInputDate
+    width: 100%
+
+  .DropdownOption
+    width: 100%

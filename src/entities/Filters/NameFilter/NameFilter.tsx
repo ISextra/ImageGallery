@@ -2,11 +2,16 @@ import React, {useState} from 'react';
 import classes from "./NameFilter.module.sass";
 
 const NameFilter: React.FC = () => {
-    const [nameFilter, setNameFilter] = useState("Наименование");
+    const [nameFilterValue, setNameFilterValue] = useState("");
 
     return (
-        <input className={classes.NameFilter}>
-        </input>
+        <input
+            type="text"
+            placeholder="Наименование"
+            className={classes.NameFilter}
+            value={nameFilterValue}
+            onChange={event => setNameFilterValue(event.target.value)}
+        />
     );
 };
 

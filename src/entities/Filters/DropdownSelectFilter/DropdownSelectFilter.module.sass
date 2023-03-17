@@ -1,4 +1,4 @@
-.NameFilter
+.DropdownSelectFilter
   display: flex
   align-content: center
   border: 2px solid white
@@ -11,8 +11,17 @@
   font-size: 15px
   opacity: 0.7
 
+  & option:hover
+    background: olive linear-gradient(olive, olive)
+    color: blue
+
+  & option:checked
+    background: white
+    color: black
+    font-size: 15px
+
 @media screen and (max-width: 320px)
-  .NameFilter
-    width: 280px
+  .DropdownSelectFilter
+    width: 100%
     margin-bottom: 16px
 
