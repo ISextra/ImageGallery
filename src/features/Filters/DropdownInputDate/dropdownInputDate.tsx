@@ -14,10 +14,14 @@ const DropdownInputDate: React.FC<DropdownFilterProps> = ({content}) => {
     function handleInputDateButtonClick() {
         setIsNeedShowInputs(!isNeedShowInputs);
 
-        if (isNeedShowInputs) {
-            if (inputDateButtonRef.current) {
-                inputDateButtonRef.current.style.borderBottom = "none";
-            }
+        if (!isNeedShowInputs && inputDateButtonRef.current) {
+            inputDateButtonRef.current.style.borderBottom = "none";
+
+            return
+        }
+
+        if (inputDateButtonRef.current) {
+            inputDateButtonRef.current.style.borderBottom = "2px solid white";
         }
     }
 

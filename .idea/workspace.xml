@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-2] добавление redux">
-      <change afterPath="$PROJECT_DIR$/src/entities/Authors/autors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Paintings/paintings.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/locations/locations.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/homePage.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/NotFound/pageNotFound.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/NotFound/pageNotFound.tsx" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-3] routing setup">
+      <change afterPath="$PROJECT_DIR$/src/app/hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/locations/model/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/locations/model/slice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/paintings/api/getPaintings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/paintings/model/slice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/DropdownInputDate/DropdownInputDate.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/DropdownInputDate/dropdownInputDate.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/DropdownInputDate/DropdownInputDate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/DropdownInputDate/dropdownInputDate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/DropdownSelectFilter/DropdownSelectFilter.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/DropdownSelectFilter/dropdownSelectFilter.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/DropdownSelectFilter/DropdownSelectFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/DropdownSelectFilter/dropdownSelectFilter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/Filters.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/filters.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/filters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/NameFilter/NameFilter.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/NameFilter/NameFilter.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Filters/NameFilter/NameFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/NameFilter/NameFilter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Header/Header.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/header.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/ThemeButton.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Header/ThemeButton/ThemeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/ThemeButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Header/Title/Title.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/Title.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Header/Title/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ImageList/ImageList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ImageList/imageList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/constants/links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/constants/links.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Authors/autors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/autors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Paintings/paintings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/paintings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/DropdownInputDate/dropdownInputDate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/DropdownInputDate/dropdownInputDate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="c1609770b4679d16aef2e51ebd141c8c58d62d89" />
+        <entry key="$PROJECT_DIR$" value="feature/TASK-3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,19 +45,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/sabin/WebstormProjects/calculator-react",
+    "last_opened_file_path": "C:/Users/isolovev/WebstormProjects/image-gallery/src/entities/paintings/api",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "C:\\Users\\sabin\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\isolovev\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\paintings\api" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\locations\model" />
       <recent name="C:\Users\sabin\WebstormProjects\image-gallery\src\features\Wrapper" />
       <recent name="C:\Users\sabin\WebstormProjects\image-gallery\src\features" />
       <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\Filters" />
@@ -100,6 +89,10 @@
       <workItem from="1678974223636" duration="4573000" />
       <workItem from="1679047122718" duration="18554000" />
       <workItem from="1679293439263" duration="9280000" />
+      <workItem from="1679312587555" duration="6548000" />
+      <workItem from="1679319870919" duration="2450000" />
+      <workItem from="1679322423554" duration="2374000" />
+      <workItem from="1679325138464" duration="1054000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
