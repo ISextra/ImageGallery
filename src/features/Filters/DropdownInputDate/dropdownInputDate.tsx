@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from './DropdownInputDate.module.sass'
+import classes from './dropdownInputDate.module.sass'
 
 interface DropdownFilterProps {
     content: string;
@@ -9,12 +9,24 @@ const DropdownInputDate: React.FC<DropdownFilterProps> = ({content}) => {
     const [isNeedShowInputs, setIsNeedShowInputs] = useState(false);
     const [DropdownFilterDateStart, setDropdownFilterDateStart] = useState("");
     const [DropdownFilterDateEnd, setDropdownFilterDateEnd] = useState("");
+    const inputDateButtonRef = React.useRef<HTMLButtonElement>(null);
+
+    function handleInputDateButtonClick() {
+        setIsNeedShowInputs(!isNeedShowInputs);
+
+        if (isNeedShowInputs) {
+            if (inputDateButtonRef.current) {
+                inputDateButtonRef.current.style.borderBottom = "none";
+            }
+        }
+    }
 
     return (
         <div style={{position:"relative", width:"100%"}}>
             <button
                 className={classes.DropdownInputDate}
-                onClick={() => setIsNeedShowInputs(!isNeedShowInputs)}
+                ref={inputDateButtonRef}
+                onClick={handleInputDateButtonClick}
             >
                 {
                     content

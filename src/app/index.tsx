@@ -1,24 +1,22 @@
 import React from 'react';
 import './index.sass';
-import { withProviders} from "./providers";
-import { Header } from '../entities/Header/Header';
-import { Filters } from "../entities/Filters/Filters";
-import {BrowserRouter, Route, RouterProvider, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import links from "../shared/constants/links";
+import Wrapper from "../features/Wrapper/wrapper";
+import HomePage from "../pages/Home/homePage";
+import CardPage from "../pages/Card/cardPage";
+import PageNotFound from "../pages/NotFound/pageNotFound";
 
 
 function App() {
     return (
         <BrowserRouter>
-            <div className="App">
-                <Header/>
-                <Filters/>
-            </div>
             <Routes>
-                <Route path="/" element={<div>123</div>}>
+                <Route path={links.homePage} element={<Wrapper/>}>
+                    <Route index element={<HomePage/>}/>
+                    <Route path={links.cardPage} element={<CardPage/>} />
+                    <Route path={links.padeNotFound} element={<PageNotFound/>} />
                 </Route>
-                <Route index element={<div>123</div>} />
-                <Route path="/about" element={<div>1234</div>} />
-                <Route path="*" element={<div>Not Found</div>} />
             </Routes>
         </BrowserRouter>
     );

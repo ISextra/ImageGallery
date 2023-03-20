@@ -1,8 +1,8 @@
 import React from 'react';
-import classes from './Filters.module.sass'
+import classes from './filters.module.sass'
 import NameFilter from "./NameFilter/NameFilter";
-import DropdownSelectFilter from "./DropdownSelectFilter/DropdownSelectFilter";
-import DropdownInputDate from "./DropdownInputDate/DropdownInputDate";
+import DropdownSelectFilter from "./DropdownSelectFilter/dropdownSelectFilter";
+import DropdownInputDate from "./DropdownInputDate/dropdownInputDate";
 
 export const Filters: React.FC = () => {
     return (

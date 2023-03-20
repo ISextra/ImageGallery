@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from "./DropdownSelectFilter.module.sass";
+import classes from "./dropdownSelectFilter.module.sass";
 
 interface DropdownFilterProps {
     content: string;

@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import classes from "./Title.module.sass"
 
 const Title: React.FC = () => {
     return (
-        <div className={classes.Ttl}>
+        <Link to={"/"} className={classes.Ttl}>
             ImageGallery
-        </div>
+        </Link>
     );
 };
 

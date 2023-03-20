@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Header.module.sass'
+import classes from './header.module.sass'
 import ThemeButton from './ThemeButton/ThemeButton'
 import Title from './Title/Title'
 
