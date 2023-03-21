@@ -1,5 +1,6 @@
-import { createSlice } from '@reduxjs/toolkit'
-import { getLocations } from "../api/getLocations";
+import {createAction, createSlice} from '@reduxjs/toolkit'
+import store from "../../../app/store";
+import {getPaintings} from "../../paintings/api/getPaintings";
 
 
 const locationsSlice = createSlice({
@@ -11,7 +12,7 @@ const locationsSlice = createSlice({
     },
     extraReducers: (builder) => {
         // Add reducers for additional action types here, and handle loading state as needed
-        builder.addCase(getLocations.fulfilled, (state, action) => {
+        builder.addCase(getPaintings.fulfilled, (state, action) => {
             // Add user to the state array
             state.list = action.payload;
         })
