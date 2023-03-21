@@ -1,17 +1,19 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Filters } from "../../features/Filters/filters";
-import { useState } from 'react';
-import {useDispatch, useSelector} from 'react-redux';
-import {useAppDispatch} from "../../app/hooks";
-import {fetchPaintingsById} from "../../entities/paintings/model/slice";
+import { useAppDispatch } from "../../app/hooks";
+import { getPaintings } from "../../entities/paintings/api/getPaintings";
+import { getLocations } from "../../entities/locations/api/getLocations";
+import { getAuthors } from "../../entities/authors/api/getAuthors";
+import store from "../../app/store";
 
 const HomePage: React.FC = () => {
-    const state = useSelector(state => state);
     const dispatch = useAppDispatch();
 
     useEffect(() => {
         //@ts-ignore
-        dispatch(fetchPaintingsById({}))
+        dispatch(getPaintings({}));
+        dispatch(getLocations({}));
+        dispatch(getAuthors({}));
     }, []);
 
     return (

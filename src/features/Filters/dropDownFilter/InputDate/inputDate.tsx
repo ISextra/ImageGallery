@@ -1,43 +1,18 @@
 import React, {useState} from 'react';
-import classes from './dropdownInputDate.module.sass'
+import classes from './inputDate.module.sass'
 
 interface DropdownFilterProps {
-    content: string;
+    isNeedShowOptions: boolean;
 }
 
-const DropdownInputDate: React.FC<DropdownFilterProps> = ({content}) => {
-    const [isNeedShowInputs, setIsNeedShowInputs] = useState(false);
+const InputDate: React.FC<DropdownFilterProps> = ({isNeedShowOptions}) => {
     const [DropdownFilterDateStart, setDropdownFilterDateStart] = useState("");
     const [DropdownFilterDateEnd, setDropdownFilterDateEnd] = useState("");
-    const inputDateButtonRef = React.useRef<HTMLButtonElement>(null);
-
-    function handleInputDateButtonClick() {
-        setIsNeedShowInputs(!isNeedShowInputs);
-
-        if (!isNeedShowInputs && inputDateButtonRef.current) {
-            inputDateButtonRef.current.style.borderBottom = "none";
-
-            return
-        }
-
-        if (inputDateButtonRef.current) {
-            inputDateButtonRef.current.style.borderBottom = "2px solid white";
-        }
-    }
 
     return (
-        <div style={{position:"relative", width:"100%"}}>
-            <button
-                className={classes.DropdownInputDate}
-                ref={inputDateButtonRef}
-                onClick={handleInputDateButtonClick}
-            >
-                {
-                    content
-                }
-            </button>
+        <div>
             {
-                isNeedShowInputs ?
+                isNeedShowOptions ?
                     <div className={classes.DropdownOption}>
                         <input
                             type="text"
@@ -61,4 +36,4 @@ const DropdownInputDate: React.FC<DropdownFilterProps> = ({content}) => {
     );
 };
 
-export default DropdownInputDate;
+export default InputDate;

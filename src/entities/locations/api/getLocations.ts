@@ -5,7 +5,7 @@ interface IFetchLocationsById {
 }
 
 export const getLocations = createAsyncThunk(
-    'paintings/fetchPaintingsById',
+    'locations/fetchLocationsById',
     async (payload: IFetchLocationsById, thunkAPI) => {
         const response = await fetch("https://test-front.framework.team/locations")
         //@ts-ignore

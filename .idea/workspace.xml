@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-3] add slices for locations and authors, add fetch for locations">
-      <change afterPath="$PROJECT_DIR$/src/entities/authors/api/getAuthors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/authors/model/slice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/locations/api/getLocations.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/DropdownSelectFilter/dropdownOptions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/dropdownFilter.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/dropdownFilter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/authors/api/getAuthors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/api/getAuthors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/authors/autors.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/authors/model/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/model/slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/locations/api/getLocations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/api/getLocations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/locations/locations.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/locations/model/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/model/slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/actionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/actionCreators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/paintings.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/DropdownInputDate/dropdownInputDate.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/InputDate/inputDate.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/DropdownInputDate/dropdownInputDate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/InputDate/inputDate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/DropdownSelectFilter/dropdownSelectFilter.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/DropdownSelectFilter/select.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/DropdownSelectFilter/dropdownSelectFilter.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/NameFilter/NameFilter.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/NameFilter/NameFilter.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/NameFilter/NameFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/NameFilter/NameFilter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/filters.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/TASK-3" />
+        <entry key="$PROJECT_DIR$" value="b92f9c4ea924d4b7e8ac8935496b71cd962fb934" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,32 +54,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/isolovev/WebstormProjects/image-gallery/src/entities/paintings/api&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\isolovev\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/WebstormProjects/image-gallery",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "D:\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\paintings\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\image-gallery\src\features\Filters\dropDownFilter" />
       <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\locations\model" />
       <recent name="C:\Users\sabin\WebstormProjects\image-gallery\src\features\Wrapper" />
       <recent name="C:\Users\sabin\WebstormProjects\image-gallery\src\features" />
       <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\Filters" />
-      <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\Filter\DropdownFilter" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,6 +110,8 @@
       <workItem from="1679322423554" duration="2374000" />
       <workItem from="1679325138464" duration="1378000" />
       <workItem from="1679392023963" duration="1458000" />
+      <workItem from="1679399419324" duration="333000" />
+      <workItem from="1679399756455" duration="11447000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>

@@ -1,10 +1,8 @@
-import {createAction, createSlice} from '@reduxjs/toolkit'
-import store from "../../../app/store";
-import {getPaintings} from "../../paintings/api/getPaintings";
+import { createSlice} from '@reduxjs/toolkit'
+import { getAuthors } from "../api/getAuthors";
 
-
-const locationsSlice = createSlice({
-    name: 'locations',
+const authorsSlice = createSlice({
+    name: 'authors',
     initialState: {
         list: [],
     },
@@ -12,12 +10,12 @@ const locationsSlice = createSlice({
     },
     extraReducers: (builder) => {
         // Add reducers for additional action types here, and handle loading state as needed
-        builder.addCase(getPaintings.fulfilled, (state, action) => {
+        builder.addCase(getAuthors.fulfilled, (state, action) => {
             // Add user to the state array
             state.list = action.payload;
         })
     },
 })
 
-//export const { returnLocationState } = locationsSlice.actions
-export default locationsSlice.reducer
+//export const { authorsSlice } = authorsSlice.actions
+export default authorsSlice.reducer

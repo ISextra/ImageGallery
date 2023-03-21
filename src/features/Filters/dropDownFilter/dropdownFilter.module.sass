@@ -1,9 +1,14 @@
-.NameFilter
+.dropdownFilter
+  position: relative
+  width: 100%
+
+.dropdownFilterButton
   display: flex
-  align-content: center
+  flex-wrap: wrap
+  align-content: start
+  padding: 10px
   border: 2px solid white
   border-radius: 5px
-  padding: 10px
   width: 265px
   height: 45px
   background: #0C0C0C
@@ -11,7 +16,5 @@
   font-size: 15px
 
 @media screen and (max-width: 320px)
-  .NameFilter
-    width: 280px
-    margin-bottom: 16px
-
+  .dropdownFilterButton
+    width: 100%

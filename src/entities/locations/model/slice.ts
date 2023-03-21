@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { getLocations } from "../api/getLocations";
 
-
 const locationsSlice = createSlice({
     name: 'locations',
     initialState: {

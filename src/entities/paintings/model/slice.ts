@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import {getPaintings} from "../api/getPaintings";
+import { getPaintings } from "../api/getPaintings";
 
 const paintingsSlice = createSlice({
     name: 'paintings',
