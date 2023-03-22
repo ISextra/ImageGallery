@@ -8,7 +8,7 @@ import paintingsSlice from "../entities/paintings/model/slice";
 import authorsSlice  from "../entities/authors/model/slice";
 
 const rootReducer = combineReducers({
-    location: locationsSlice,
+    locations: locationsSlice,
     paintings: paintingsSlice,
     authors: authorsSlice,
 })
@@ -21,16 +21,21 @@ export type RootState = {
            name: string,
         }>
     },
-    location: {
+    locations: {
         list: Array<{
             id: number,
             location: string,
         }>
     },
     paintings: {
-        list: [
-
-        ]
+        list: Array<{
+            id: number,
+            name: string
+            authorId: number,
+            locationId: number,
+            created: string,
+            imgUrl: string,
+        }>
     }
 }
 // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}

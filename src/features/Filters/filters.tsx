@@ -1,37 +1,19 @@
 import React, {useState} from 'react';
 import classes from './filters.module.sass'
-import NameFilter from "./NameFilter/NameFilter";
-import DropdownFilter from "./dropDownFilter/dropdownFilter";
-import DropdownOptions from "./dropDownFilter/DropdownSelectFilter/dropdownOptions";
-import InputDate from "./dropDownFilter/InputDate/inputDate";
-import {useAppSelector} from "../../app/hooks";
+import InputPaintingName from "../../entities/paintings/ui/inputPaintingName";
+import AuthorsDropdown from "../../entities/authors/ui/authorsDropdown";
+import LocationsDropdown from "../../entities/locations/ui/locationsDropdown";
+import InputDateInterval from "../../entities/paintings/ui/inputDateInterval";
+
+//toDo с помощью калбека передавать тип фильтра (old)
 
 export const Filters: React.FC = () => {
-    const [isNeedShowOptions, setIsNeedShowOptions] = useState(false);
-    const callbackIsNeedShowOptions = (flag: boolean) => {
-        setIsNeedShowOptions(flag);
-    }
-
-    // const {authors: {list: []}, paintings: {list: []}}
-
-    const getAuthors = useAppSelector(state => state.authors.list.map(item => {
-        return {
-            text: item.name,
-            id: item.id,
-        }
-    }))
-
     return (
         <div className={classes.Filters}>
-            <NameFilter
-                onSubmit={() => {}}
-            />
-            <DropdownFilter
-                content="Дата"
-                show={callbackIsNeedShowOptions}
-                options={<InputDate isNeedShowOptions={isNeedShowOptions}/>}
-            />
-
+            <InputPaintingName/>
+            <AuthorsDropdown/>
+            <LocationsDropdown/>
+            <InputDateInterval/>
         </div>
     );
 };

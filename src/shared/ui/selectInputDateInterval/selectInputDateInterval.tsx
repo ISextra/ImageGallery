@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import classes from './inputDate.module.sass'
+import classes from './selectInputDateInterval.module.sass'
 
 interface DropdownFilterProps {
     isNeedShowOptions: boolean;
 }
 
-const InputDate: React.FC<DropdownFilterProps> = ({isNeedShowOptions}) => {
+const SelectInputDateInterval: React.FC<DropdownFilterProps> = ({isNeedShowOptions}) => {
     const [DropdownFilterDateStart, setDropdownFilterDateStart] = useState("");
     const [DropdownFilterDateEnd, setDropdownFilterDateEnd] = useState("");
 
@@ -36,4 +36,4 @@ const InputDate: React.FC<DropdownFilterProps> = ({isNeedShowOptions}) => {
     );
 };
 
-export default InputDate;
+export default SelectInputDateInterval;

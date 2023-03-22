@@ -1,4 +1,4 @@
-.DropdownSelectFilter
+.input
   display: flex
   align-content: center
   border: 2px solid white
@@ -9,18 +9,11 @@
   background: #0C0C0C
   color: #FFFFFF
   font-size: 15px
-
-  & option:hover
-    background: olive linear-gradient(olive, olive)
-    color: blue
-
-  & option:checked
-    background: white
-    color: black
-    font-size: 15px
+  &:focus
+    outline: none
 
 @media screen and (max-width: 320px)
-  .DropdownSelectFilter
+  .input
     width: 100%
     margin-bottom: 16px
 

@@ -1,0 +1,32 @@
+.dropdownSelect
+  display: flex
+  flex-direction: column
+  position: relative
+  align-items: center
+  justify-content: center
+  border: 2px solid white
+  border-top: none
+  border-radius: 5px
+  background: #0C0C0C
+  color: #FFFFFF
+  font-size: 15px
+  &Option
+    display: flex
+    cursor: pointer
+    border-bottom: 1px white
+    padding: 10px
+    background: #0C0C0C
+    color: white
+    font-size: 13px
+
+hr
+  width: 100%
+  color: white
+  opacity: 0.3
+
+@media screen and (max-width: 320px)
+  .dropdownSelect
+    width: 100%
+    &Option
+      width: 100%
+

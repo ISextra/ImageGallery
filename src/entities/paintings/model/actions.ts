@@ -1,1 +1,1 @@
-export {}
+export const FETCH_PAINTINGS = "FETCH_PAINTINGS";

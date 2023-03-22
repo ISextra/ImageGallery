@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
-import classes from "./dropdownFilter.module.sass";
-import store from "../../../app/store";
+import classes from "./dropdown.module.sass";
 
 interface DropdownFilterProps {
     content: string;
     show: (flag:boolean)=>void;
-    options: React.ReactNode
+    popupContent: React.ReactNode
 }
-const DropdownFilter: React.FC<DropdownFilterProps> = ({content, show, options}) => {
+const Dropdown: React.FC<DropdownFilterProps> = ({content, show, popupContent}) => {
+
     const [isNeedShowOptions, setIsNeedShowOptions] = useState(false);
     const inputDateButtonRef = React.useRef<HTMLButtonElement>(null);
 
@@ -37,9 +37,9 @@ const DropdownFilter: React.FC<DropdownFilterProps> = ({content, show, options})
                     content
                 }
             </button>
-            {options}
+            {isShowPopupContent && popupContent} //toDo переделать флаги показа таким образом
         </div>
     );
 };
 
-export default DropdownFilter;
+export default Dropdown;
