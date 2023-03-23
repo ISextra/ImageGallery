@@ -4,34 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-5] Реализация общего UI компонента Dropdown с логикой выпадающего елемента;&#10;добавление .idea в gitignore&#10;(commit with errors)">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/authors/model/actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputDateInterval.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/select/select.module.sass" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-5] создание общих компенентов dropdown, select, input, selectInputDateInterval;&#10;создание компонетнов для бизнес сущностей authorsDropdown, locationsDropdown, inputDateInterval, inputPaintingName; разделение показа окон для каждого фильтра; заполнение фильтра при нажатии на options фильтра(для select фильтров)">
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/authors/api/getAuthors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/api/getAuthors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/locations/api/getLocations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/api/getLocations.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/locations/model/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/model/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/paintings/api/getPaintings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/api/getPaintings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/NameFilter/NameFilter.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/input/input.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/NameFilter/NameFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/DropdownSelectFilter/dropdownOptions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/select/select.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/DropdownSelectFilter/select.module.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/InputDate/inputDate.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/selectInputDateInterval.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/InputDate/inputDate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/selectInputDateInterval.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/dropdownFilter.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/dropDownFilter/dropdownFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/filters.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/filters.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/styles/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/ui/inputDateInterval.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputDateInterval.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/filters.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/filters.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Filters/filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/filters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/constants/links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/constants/links.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/ThemeButton.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/ThemeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/Title.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/header.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/input/input.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/input/input.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/select/select.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/select/select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/selectInputDateInterval.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/selectInputDateInterval.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,9 @@
       <workItem from="1679399756455" duration="11844000" />
       <workItem from="1679479967446" duration="12443000" />
       <workItem from="1679492909642" duration="720000" />
-      <workItem from="1679493638867" duration="5333000" />
+      <workItem from="1679493638867" duration="5730000" />
+      <workItem from="1679565464842" duration="242000" />
+      <workItem from="1679565711135" duration="7022000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -174,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679411591298</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[TASK-5] создание общих компенентов dropdown, select, input, selectInputDateInterval;&#10;создание компонетнов для бизнес сущностей authorsDropdown, locationsDropdown, inputDateInterval, inputPaintingName; разделение показа окон для каждого фильтра; заполнение фильтра при нажатии на options фильтра(для select фильтров)">
+      <created>1679499405548</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679499405548</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +211,8 @@
     <MESSAGE value="[TASK-3] fetch setup" />
     <MESSAGE value="[TASK-3] add slices for locations and authors, add fetch for locations" />
     <MESSAGE value="[TASK-5] Реализация общего UI компонента Dropdown с логикой выпадающего елемента;&#10;добавление .idea в gitignore&#10;(commit with errors)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-5] Реализация общего UI компонента Dropdown с логикой выпадающего елемента;&#10;добавление .idea в gitignore&#10;(commit with errors)" />
+    <MESSAGE value="[TASK-5] создание общих компенентов dropdown, select, input, selectInputDateInterval;&#10;создание компонетнов для бизнес сущностей authorsDropdown, locationsDropdown, inputDateInterval, inputPaintingName; разделение показа окон для каждого фильтра; заполнение фильтра при нажатии на options фильтра(для select фильтров)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-5] создание общих компенентов dropdown, select, input, selectInputDateInterval;&#10;создание компонетнов для бизнес сущностей authorsDropdown, locationsDropdown, inputDateInterval, inputPaintingName; разделение показа окон для каждого фильтра; заполнение фильтра при нажатии на options фильтра(для select фильтров)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

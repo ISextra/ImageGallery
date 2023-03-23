@@ -1,6 +1,8 @@
-.DropdownOption
+.popup-inputs
   display: flex
-  position: relative
+  flex-direction: row
+  position: absolute
+  z-index: 10
   align-items: center
   justify-content: center
   border: 2px solid white
@@ -11,7 +13,7 @@
   background: #0C0C0C
   color: #FFFFFF
   font-size: 15px
-  &Input
+  &__input
     display: flex
     align-content: center
     border: 2px solid white
@@ -26,8 +28,5 @@
       outline: none
 
 @media screen and (max-width: 320px)
-  .DropdownInputDate
-    width: 100%
-
-  .DropdownOption
+  .popup-inputs
     width: 100%

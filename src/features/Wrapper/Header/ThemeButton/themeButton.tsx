@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from './ThemeButton.module.sass'
+import './themeButton.sass'
 
 const ThemeButton: React.FC = () => {
     return (
-        <button className={classes.ThemeBtn}>
+        <button className="theme-button">
             -(x)-
         </button>
     );

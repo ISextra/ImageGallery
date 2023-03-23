@@ -1,14 +1,10 @@
-import React, {useState} from 'react';
-import {useAppSelector} from "../../../app/hooks";
+import React, { useState } from 'react';
+import { useAppSelector } from "../../../app/hooks";
 import Dropdown from "../../../shared/ui/dropdown/dropdown";
-import Select from "../../../shared/ui/select/select";
+import Popup from "../../../shared/ui/popup/popup";
 
 const AuthorsDropdown = () => {
     const [elementFromSelect, setElementFromSelect] = useState("Автор");
-
-    const getFlagFromElement = (flag: boolean) => {
-        setIsNeedShowSelect(flag);
-    }
 
     const getElementFromSelect = (element: string) => {
         setElementFromSelect(element);
@@ -26,7 +22,7 @@ const AuthorsDropdown = () => {
         <Dropdown
             content={elementFromSelect}
             popupContent={
-                <Select//toDo переименовать в popup, переделать sass с модулей на solid
+                <Popup
                     onElementClick={getElementFromSelect}
                     options={authors}
                 />

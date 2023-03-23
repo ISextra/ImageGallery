@@ -1,43 +1,41 @@
 import React, {useState} from 'react';
-import classes from "./dropdown.module.sass";
-
+import './dropdown.sass'
 interface DropdownFilterProps {
     content: string;
-    show: (flag:boolean)=>void;
     popupContent: React.ReactNode
 }
-const Dropdown: React.FC<DropdownFilterProps> = ({content, show, popupContent}) => {
-
-    const [isNeedShowOptions, setIsNeedShowOptions] = useState(false);
-    const inputDateButtonRef = React.useRef<HTMLButtonElement>(null);
+const Dropdown: React.FC<DropdownFilterProps> = ({content, popupContent}) => {
+    const [isShowPopupContent, setIsShowPopupContent] = useState(false);
+    const dropdownButtonRef = React.useRef<HTMLButtonElement>(null);
 
     function handleDropdownButtonClick() {
-        setIsNeedShowOptions(!isNeedShowOptions);
-        show(isNeedShowOptions);
+        setIsShowPopupContent(!isShowPopupContent);
 
-        if (isNeedShowOptions && inputDateButtonRef.current) {
-            inputDateButtonRef.current.style.borderBottom = "none";
+        if (!isShowPopupContent && dropdownButtonRef.current) {
+            dropdownButtonRef.current.style.borderBottom = "none";
 
             return
         }
 
-        if (inputDateButtonRef.current) {
-            inputDateButtonRef.current.style.borderBottom = "2px solid white";
+        if (dropdownButtonRef.current) {
+            dropdownButtonRef.current.style.borderBottom = "2px solid white";
         }
     }
 
     return (
-        <div className={classes.dropdownFilter}>
+        <div className="dropdown">
             <button
-                className={classes.dropdownFilterButton}
-                ref={inputDateButtonRef}
+                className="dropdown__button"
+                ref={dropdownButtonRef}
                 onClick={handleDropdownButtonClick}
             >
                 {
                     content
                 }
             </button>
-            {isShowPopupContent && popupContent} //toDo переделать флаги показа таким образом
+            {
+                isShowPopupContent && popupContent
+            }
         </div>
     );
 };
