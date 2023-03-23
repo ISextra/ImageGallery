@@ -4,7 +4,12 @@ interface DropdownFilterProps {
     content: string;
     popupContent: React.ReactNode
 }
-const Dropdown: React.FC<DropdownFilterProps> = ({content, popupContent}) => {
+const Dropdown: React.FC<DropdownFilterProps> = (props) => {
+    const {
+        content,
+        popupContent
+    } = props
+
     const [isShowPopupContent, setIsShowPopupContent] = useState(false);
     const dropdownButtonRef = React.useRef<HTMLButtonElement>(null);
 

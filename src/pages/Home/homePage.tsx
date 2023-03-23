@@ -4,6 +4,9 @@ import { useAppDispatch } from "../../app/hooks";
 import { getPaintings } from "../../entities/paintings/api/getPaintings";
 import { getLocations } from "../../entities/locations/api/getLocations";
 import { getAuthors } from "../../entities/authors/api/getAuthors";
+import CardList from "../../features/cardList/cardList";
+import Card from "../../shared/ui/card/card";
+import store from "../../app/store";
 
 const HomePage: React.FC = () => {
     const dispatch = useAppDispatch();
@@ -18,6 +21,7 @@ const HomePage: React.FC = () => {
     return (
         <div>
             <Filters/>
+            <CardList/>
         </div>
     );
 };

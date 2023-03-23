@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.sass';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import links from "../shared/ui/constants/links";
+import links from "../shared/constants/links";
 import Wrapper from "../features/Wrapper/wrapper";
 import HomePage from "../pages/Home/homePage";
 import CardPage from "../pages/Card/cardPage";
