@@ -1,15 +1,21 @@
 import React from 'react';
 import Card from "../../shared/ui/card/card";
-import store from "../../app/store";
 import {useAppSelector} from "../../app/hooks";
+import "./cardList.sass"
 
 const CardList: React.FC = () => {
     const paintings = useAppSelector(state => state.paintings.list)
-    console.log(paintings)
 
     return (
-        <div>
-            {/*<Card painting={painting1}/>*/}
+        <div className="cardList">
+            {
+                paintings.map(item => {
+                    return <Card
+                        key={item.id}
+                        painting={item}
+                    />
+                })
+            }
         </div>
     );
 };

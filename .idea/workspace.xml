@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-3] удалены все лишние вложенности; переход от module.sass к solid sass; elements naming fix; fix стилей элементов">
-      <change afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/image/image.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/image/image.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/card/card.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-3] фикс архитектуры расположения файлов, реализация роутинга страниц">
+      <change afterPath="$PROJECT_DIR$/src/features/cardList/cardList.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/styles/normalize.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/normalize.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/constants/links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/constants/links.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/filters.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/filters.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="b92f9c4ea924d4b7e8ac8935496b71cd962fb934" />
+        <entry key="$PROJECT_DIR$" value="feature/TASK-8" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +42,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WebstormProjects/image-gallery&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sabin/WebstormProjects/image-gallery&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -54,7 +51,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\sabin\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -105,6 +102,11 @@
       <workItem from="1679565464842" duration="242000" />
       <workItem from="1679565711135" duration="8529000" />
       <workItem from="1679574365954" duration="9374000" />
+      <workItem from="1679851507582" duration="105000" />
+      <workItem from="1679853583572" duration="9000" />
+      <workItem from="1679853594083" duration="2806000" />
+      <workItem from="1679945154409" duration="771000" />
+      <workItem from="1679982223276" duration="747000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -181,6 +183,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

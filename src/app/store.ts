@@ -34,7 +34,7 @@ export type RootState = {
             authorId: number,
             locationId: number,
             created: string,
-            imgUrl: string,
+            imageUrl: string,
         }>
     }
 }

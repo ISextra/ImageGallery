@@ -1,7 +1,10 @@
-import React, { MouseEventHandler } from 'react';
+import React, {MouseEventHandler, useEffect} from 'react';
 import {useAppSelector} from "../../../app/hooks";
 import Image from "../../image/image";
 import "./card.sass"
+import {getPaintings} from "../../../entities/paintings/api/getPaintings";
+import {getLocations} from "../../../entities/locations/api/getLocations";
+import {getAuthors} from "../../../entities/authors/api/getAuthors";
 
 
 interface ICardProps {
@@ -11,7 +14,7 @@ interface ICardProps {
         authorId: number,
         locationId: number,
         created: string,
-        imgUrl: string,
+        imageUrl: string,
     }
 }
 
@@ -20,48 +23,57 @@ const Card: React.FC<ICardProps> = (props) => {
         painting
     } = props
 
+    const cardRef = React.useRef<HTMLDivElement>(null);
     const descriptionRef = React.useRef<HTMLDivElement>(null);
+    const nameDescriptionRef = React.useRef<HTMLDivElement>(null);
 
-    const handleMouseEnter: MouseEventHandler<HTMLDivElement> = (event) => {
-        if (descriptionRef.current) {
-            descriptionRef.current.style.top = "142px";
+    const handleMouseEnter: MouseEventHandler<HTMLDivElement> = () => {
+        if (descriptionRef.current && cardRef.current && nameDescriptionRef.current) {
+            nameDescriptionRef.current.style.whiteSpace = "normal";
+            nameDescriptionRef.current.style.overflow = "visible";
+
+            descriptionRef.current.style.top = cardRef.current.offsetHeight - descriptionRef.current.offsetHeight + "px";
         }
+
     }
 
-    const handleMouseLeave: MouseEventHandler<HTMLDivElement>= (event) => {
-        if (descriptionRef.current) {
-            descriptionRef.current.style.top = "176px";
+    const handleMouseLeave: MouseEventHandler<HTMLDivElement>= () => {
+        if (descriptionRef.current && cardRef.current && nameDescriptionRef.current) {
+            nameDescriptionRef.current.style.whiteSpace = "nowrap";
+            nameDescriptionRef.current.style.overflow = "hidden";
+
+            descriptionRef.current.style.top = cardRef.current.offsetHeight - nameDescriptionRef.current.offsetHeight + "px";
         }
     }
-
-    // const authors = useAppSelector(state => state.authors.list.map(item => {
-    //     return {
-    //         text: item.name,
-    //         id: item.id,
-    //     };
-    // }))
 
     return (
         <div
             className="card"
+            ref={cardRef}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+
         >
             <Image
-                //src={`${process.env.REACT_APP_FETCH_URL}${painting.imgUrl}`}
-                //src={`${process.env.REACT_APP_FETCH_URL}/images/The_ninth_wave.jpeg`}
-                src={`${process.env.REACT_APP_FETCH_URL}${painting.imgUrl}`}
+                src={`${process.env.REACT_APP_FETCH_URL}${painting.imageUrl}`}
                 alt={painting.name}
             />
             <div
                 className="card__description-container"
                 ref={descriptionRef}
             >
-                <div className="card__description-container_card-name">
+                <div
+                    className="card__description-container_card-name"
+                    ref={nameDescriptionRef}
+                >
                     {painting.name}
                 </div>
-                <div className="card__description-container_card-creator">
-                    {`Дата создания: ${painting.created}`}
+                <div
+                    className="card__description-container_card-creator"
+                >
+                    {`Автор: ${painting.created}`}<br/>
+                    {`Дата создания: ${painting.created}`}<br/>
+                    {`Место: ${painting.created}`}<br/>
                 </div>
             </div>
         </div>
