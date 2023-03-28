@@ -6,11 +6,11 @@ import "./cardList.sass"
 const CardList: React.FC = () => {
     const paintings = useAppSelector((state) => state.paintings.list)
     const authors = useAppSelector((state) => state.authors.list);
+    const locations = useAppSelector(state => state.locations.list);
 
     const authorById = (id: number) => {
         return authors.filter(author => author.id === id)[0];
     }
-    const locations = useAppSelector(state => state.locations.list);
 
     const locationById = (id: number) => {
         return locations.filter(location => location.id === id)[0];

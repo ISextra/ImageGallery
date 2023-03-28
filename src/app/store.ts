@@ -6,11 +6,13 @@ import logger from 'redux-logger'
 import locationsSlice from "../entities/locations/model/slice"
 import paintingsSlice from "../entities/paintings/model/slice";
 import authorsSlice  from "../entities/authors/model/slice";
+import darkModeReducer from "../shared/model/darkModeSlice";
 
 const rootReducer = combineReducers({
     locations: locationsSlice,
     paintings: paintingsSlice,
     authors: authorsSlice,
+    darkMode: darkModeReducer,
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
@@ -36,6 +38,9 @@ export type RootState = {
             created: string,
             imageUrl: string,
         }>
+    },
+    darkMode: {
+        mode: string
     }
 }
 // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}

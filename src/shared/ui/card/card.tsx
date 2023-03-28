@@ -77,9 +77,9 @@ const Card: React.FC<ICardProps> = (props) => {
                 <div
                     className="card__description-container_card-creator"
                 >
-                    {`Автор: ${author.name}`}<br/>
+                    {`Автор: ${123}`}<br/>
                     {`Дата создания: ${painting.created}`}<br/>
-                    {`Место: ${location.location}`}<br/>
+                    {`Место: ${123}`}<br/>
                 </div>
             </div>
         </div>
