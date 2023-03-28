@@ -4,33 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-8] fix отображения данных описания карточки">
-      <change afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/darkModeImage_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/darkModeImage_white.png" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-18] Реализавия смены цветовой темы (темная/светлая) согластно макетам">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/LightModeButton_light.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/LightMogeButton_dark.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/styles/normalize.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/normalize.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/image/image.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/image/image.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/image/image.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680008231519</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="[TASK-18] Реализавия смены цветовой темы (темная/светлая) согластно макетам">
+      <created>1680015206058</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680015206058</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +238,8 @@
     <MESSAGE value="[TASK-8] фикс длинных строк названия карточки" />
     <MESSAGE value="[TASK-8] добавлена ифнормация о авторе и месте создания в информации карточки" />
     <MESSAGE value="[TASK-8] fix отображения данных описания карточки" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-8] fix отображения данных описания карточки" />
+    <MESSAGE value="[TASK-18] Реализавия смены цветовой темы (темная/светлая) согластно макетам" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-18] Реализавия смены цветовой темы (темная/светлая) согластно макетам" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -17,11 +17,6 @@ const ThemeButton: React.FC = () => {
         <div
             className="theme-button"
             onClick={() => {dispatch(toggleDarkMode())}}
-            style={
-                darkMode === "light"
-                    ? { color: "black" }
-                    : {}
-            }
         >
             <Image src={themeImage} alt={"themeButton"}/>
         </div>
