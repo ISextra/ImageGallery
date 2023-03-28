@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-8] добавлена ифнормация о авторе и месте создания в информации карточки">
-      <change afterPath="$PROJECT_DIR$/public/images/LightModeButton_light.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/LightMogeButton_dark.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/model/darkModeSlice.ts" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-8] Реализация UI компонента карточки картины">
+      <change afterPath="$PROJECT_DIR$/src/shared/libs/getAuthorById.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/libs/getlocationById.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/model/darkModeSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/model/darkModeSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +51,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "C:\\Users\\sabin\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "D:\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

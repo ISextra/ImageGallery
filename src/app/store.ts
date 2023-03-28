@@ -12,7 +12,7 @@ const rootReducer = combineReducers({
     locations: locationsSlice,
     paintings: paintingsSlice,
     authors: authorsSlice,
-    darkMode: darkModeReducer,
+    settings: darkModeReducer,
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
@@ -39,7 +39,7 @@ export type RootState = {
             imageUrl: string,
         }>
     },
-    darkMode: {
+    settings: {
         mode: string
     }
 }

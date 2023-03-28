@@ -13,12 +13,12 @@ interface ICardProps {
         imageUrl: string,
     },
     author: {
-        id: number,
-        name: string
+        id?: number,
+        name?: string
     },
     location: {
-        id: number,
-        location: string,
+        id?: number,
+        location?: string,
     }
 }
 
@@ -40,7 +40,6 @@ const Card: React.FC<ICardProps> = (props) => {
 
             descriptionRef.current.style.top = cardRef.current.offsetHeight - descriptionRef.current.offsetHeight + "px";
         }
-
     }
 
     const handleMouseLeave: MouseEventHandler<HTMLDivElement>= () => {
@@ -77,9 +76,9 @@ const Card: React.FC<ICardProps> = (props) => {
                 <div
                     className="card__description-container_card-creator"
                 >
-                    {`Автор: ${123}`}<br/>
+                    {`Автор: ${author.name || "-"}`}<br/>
                     {`Дата создания: ${painting.created}`}<br/>
-                    {`Место: ${123}`}<br/>
+                    {`Место: ${location.location}`}<br/>
                 </div>
             </div>
         </div>
@@ -87,11 +86,3 @@ const Card: React.FC<ICardProps> = (props) => {
 };
 
 export default Card;
-
-// <div> //обертка для перехода по клику; position: relative
-//     <div/> //картинка
-//     <div> //блок информацции; position: absolute; align-items: end
-//         <div/> //название, стоящие внизу
-//         <div/> //появляющийся при наведении блок с информацией
-//     </div>
-// </div>

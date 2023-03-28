@@ -10,7 +10,6 @@ const HomePage: React.FC = () => {
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        //@ts-ignore
         dispatch(getPaintings({}));
         dispatch(getLocations({}));
         dispatch(getAuthors({}));

@@ -1,20 +1,14 @@
 import React from 'react';
 import Card from "../../shared/ui/card/card";
 import {useAppSelector} from "../../app/hooks";
+import {getLocationById} from "../../shared/libs/getlocationById";
+import {getAuthorById} from "../../shared/libs/getAuthorById";
 import "./cardList.sass"
 
 const CardList: React.FC = () => {
-    const paintings = useAppSelector((state) => state.paintings.list)
+    const paintings = useAppSelector((state) => state.paintings.list);
     const authors = useAppSelector((state) => state.authors.list);
     const locations = useAppSelector(state => state.locations.list);
-
-    const authorById = (id: number) => {
-        return authors.filter(author => author.id === id)[0];
-    }
-
-    const locationById = (id: number) => {
-        return locations.filter(location => location.id === id)[0];
-    }
 
     return (
         <div className="cardList">
@@ -23,8 +17,14 @@ const CardList: React.FC = () => {
                     return <Card
                         key={item.id}
                         painting={item}
-                        author={authorById(item.authorId)}
-                        location={locationById(item.locationId)}
+                        author={getAuthorById({
+                            id:item.authorId,
+                            authors: authors
+                        })}
+                        location={getLocationById({
+                            id:item.locationId,
+                            locations: locations
+                        })}
                     />
                 })
             }
