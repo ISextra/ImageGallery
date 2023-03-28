@@ -40,7 +40,7 @@ export type RootState = {
         }>
     },
     settings: {
-        mode: string
+        darkMode: string
     }
 }
 // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}

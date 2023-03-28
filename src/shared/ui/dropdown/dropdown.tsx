@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './dropdown.sass'
+import {useAppSelector} from "../../../app/hooks";
 interface DropdownFilterProps {
     content: string;
     popupContent: React.ReactNode
@@ -12,6 +13,7 @@ const Dropdown: React.FC<DropdownFilterProps> = (props) => {
 
     const [isShowPopupContent, setIsShowPopupContent] = useState(false);
     const dropdownButtonRef = React.useRef<HTMLButtonElement>(null);
+    const darkMode = useAppSelector(state => state.settings.darkMode)
 
     function handleDropdownButtonClick() {
         setIsShowPopupContent(!isShowPopupContent);
@@ -23,7 +25,7 @@ const Dropdown: React.FC<DropdownFilterProps> = (props) => {
         }
 
         if (dropdownButtonRef.current) {
-            dropdownButtonRef.current.style.borderBottom = "2px solid white";
+            dropdownButtonRef.current.style.borderBottom = "2px solid";
         }
     }
 
@@ -33,6 +35,15 @@ const Dropdown: React.FC<DropdownFilterProps> = (props) => {
                 className="dropdown__button"
                 ref={dropdownButtonRef}
                 onClick={handleDropdownButtonClick}
+                style={
+                    darkMode === "light"
+                        ? {
+                            color: "black",
+                            background: "white",
+                            border: "2px solid black"
+                        }
+                        : {}
+                }
             >
                 {
                     content

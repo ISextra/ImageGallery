@@ -1,5 +1,5 @@
 import React, {MouseEventHandler, useEffect} from 'react';
-import Image from "../../image/image";
+import Image from "../image/image";
 import "./card.sass"
 
 

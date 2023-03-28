@@ -5,7 +5,9 @@ import Title from './Title/title'
 
 export const Header: React.FC = () => {
     return (
-        <div className="header">
+        <div
+            className="header"
+        >
             <Title/>
             <ThemeButton/>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./popup.sass";
+import {useAppSelector} from "../../../app/hooks";
 
 interface DropdownOptionsProps {
     onElementClick: (element: string) => void;
@@ -16,8 +17,18 @@ const Popup: React.FC<DropdownOptionsProps> = (props) => {
         options,
     } = props
 
+    const darkMode = useAppSelector(state => state.settings.darkMode)
+
     return (
-        <div className="popup">
+        <div
+            className="popup"
+            style={
+                darkMode === "light" ? {
+                    background: "white",
+                    border: "2px solid black",
+                } : {}
+            }
+        >
             <hr/>
             {
                 options.map(item => {
@@ -27,6 +38,15 @@ const Popup: React.FC<DropdownOptionsProps> = (props) => {
                         onClick={() => {
                             onElementClick(item.text);
                         }}
+                        style={
+                            darkMode === "light"
+                                ? {
+                                    color: "black",
+                                    background: "white",
+                                    border: "1px black",
+                                }
+                                : {}
+                        }
                     >
                         {item.text}
                     </div>

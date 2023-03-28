@@ -4,16 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-8] Реализация UI компонента карточки картины">
-      <change afterPath="$PROJECT_DIR$/src/shared/libs/getAuthorById.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/libs/getlocationById.ts" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-8] fix отображения данных описания карточки">
+      <change afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/darkModeImage_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/darkModeImage_white.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/LightModeButton_light.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/LightMogeButton_dark.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/model/darkModeSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/model/darkModeSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/styles/normalize.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/normalize.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/image/image.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/image/image.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/image/image.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/sabin/WebstormProjects/image-gallery/public/images",
+    "last_opened_file_path": "D:/WebstormProjects/image-gallery/public/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -57,16 +74,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\image-gallery\public\images" />
       <recent name="C:\Users\sabin\WebstormProjects\image-gallery\public\images" />
       <recent name="D:\WebstormProjects\image-gallery\src\shared\ui\input" />
       <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\paintings\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\WebstormProjects\image-gallery\src\shared" />
+      <recent name="D:\WebstormProjects\image-gallery\src\features\Wrapper\Header\ThemeButton" />
+      <recent name="D:\WebstormProjects\image-gallery\public" />
       <recent name="D:\WebstormProjects\image-gallery\src\shared\ui" />
+      <recent name="D:\WebstormProjects\image-gallery\src\shared" />
       <recent name="D:\WebstormProjects\image-gallery\src\shared\dropdown" />
-      <recent name="D:\WebstormProjects\image-gallery" />
-      <recent name="D:\WebstormProjects\image-gallery\src\features\Filters\dropDownFilter" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -193,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679987552034</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[TASK-8] fix отображения данных описания карточки">
+      <created>1680008231519</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680008231519</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +253,8 @@
     <MESSAGE value="[TASK-3] удалены все лишние вложенности; переход от module.sass к solid sass; elements naming fix; fix стилей элементов" />
     <MESSAGE value="[TASK-8] фикс длинных строк названия карточки" />
     <MESSAGE value="[TASK-8] добавлена ифнормация о авторе и месте создания в информации карточки" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-8] добавлена ифнормация о авторе и месте создания в информации карточки" />
+    <MESSAGE value="[TASK-8] fix отображения данных описания карточки" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-8] fix отображения данных описания карточки" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
