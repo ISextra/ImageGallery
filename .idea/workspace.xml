@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-3] фикс архитектуры расположения файлов, реализация роутинга страниц">
-      <change afterPath="$PROJECT_DIR$/src/features/cardList/cardList.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-8] фикс длинных строк названия карточки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/filters.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/filters.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +100,7 @@
       <workItem from="1679853583572" duration="9000" />
       <workItem from="1679853594083" duration="2806000" />
       <workItem from="1679945154409" duration="771000" />
-      <workItem from="1679982223276" duration="747000" />
+      <workItem from="1679982223276" duration="5170000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -178,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679572987105</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[TASK-8] фикс длинных строк названия карточки">
+      <created>1679983087341</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679983087341</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +212,8 @@
     <MESSAGE value="[TASK-5] создание общих компенентов dropdown, select, input, selectInputDateInterval;&#10;создание компонетнов для бизнес сущностей authorsDropdown, locationsDropdown, inputDateInterval, inputPaintingName; разделение показа окон для каждого фильтра; заполнение фильтра при нажатии на options фильтра(для select фильтров)" />
     <MESSAGE value="[TASK-5] удалены все лишние вложенности; переход от module.sass к solid sass; elements naming fix; fix стилей элементов" />
     <MESSAGE value="[TASK-3] удалены все лишние вложенности; переход от module.sass к solid sass; elements naming fix; fix стилей элементов" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-3] удалены все лишние вложенности; переход от module.sass к solid sass; elements naming fix; fix стилей элементов" />
+    <MESSAGE value="[TASK-8] фикс длинных строк названия карточки" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-8] фикс длинных строк названия карточки" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

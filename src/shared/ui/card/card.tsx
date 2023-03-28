@@ -1,26 +1,32 @@
 import React, {MouseEventHandler, useEffect} from 'react';
-import {useAppSelector} from "../../../app/hooks";
 import Image from "../../image/image";
 import "./card.sass"
-import {getPaintings} from "../../../entities/paintings/api/getPaintings";
-import {getLocations} from "../../../entities/locations/api/getLocations";
-import {getAuthors} from "../../../entities/authors/api/getAuthors";
 
 
 interface ICardProps {
-    painting:{
+    painting: {
         id: number,
         name: string
         authorId: number,
         locationId: number,
         created: string,
         imageUrl: string,
+    },
+    author: {
+        id: number,
+        name: string
+    },
+    location: {
+        id: number,
+        location: string,
     }
 }
 
 const Card: React.FC<ICardProps> = (props) => {
     const {
-        painting
+        painting,
+        author,
+        location
     } = props
 
     const cardRef = React.useRef<HTMLDivElement>(null);
@@ -71,9 +77,9 @@ const Card: React.FC<ICardProps> = (props) => {
                 <div
                     className="card__description-container_card-creator"
                 >
-                    {`Автор: ${painting.created}`}<br/>
+                    {`Автор: ${author.name}`}<br/>
                     {`Дата создания: ${painting.created}`}<br/>
-                    {`Место: ${painting.created}`}<br/>
+                    {`Место: ${location.location}`}<br/>
                 </div>
             </div>
         </div>
