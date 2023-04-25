@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Card from "../../shared/ui/card/card";
+import Pagination from "../../shared/ui/pagination/pagination";
 import {useAppSelector} from "../../app/hooks";
-import ReactPaginate from "react-paginate";
 import {getLocationById} from "../../shared/libs/getlocationById";
 import {getAuthorById} from "../../shared/libs/getAuthorById";
 import {PaintingType} from "../../entities/paintings/model/types";
@@ -49,20 +49,10 @@ const CardList: React.FC = () => {
                     })
                 }
             </div>
-            <ReactPaginate
-                breakLabel="..."
-                nextLabel=">"
-                previousLabel="<"
+            <Pagination
                 onPageChange={handlePageClick}
                 pageCount={pageCount}
-                pageRangeDisplayed={5}
-                marginPagesDisplayed={1}
-                renderOnZeroPageCount={null}
-                containerClassName="pagination"
-                pageLinkClassName="pagination__button"
-                previousLinkClassName="pagination__button previous"
-                nextLinkClassName="pagination__button next"
-                activeLinkClassName="pagination__button active"
+                darkMode={darkMode}
             />
         </div>
     );

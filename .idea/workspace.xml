@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-12] установлена библиотека пагинации; настроена пагинация; для store настроены экспортирумые типы; popup.tsx удалены лишние комментарии">
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-12] стилизация кнопок пагинации">
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
@@ -103,7 +105,7 @@
       <workItem from="1679853594083" duration="2806000" />
       <workItem from="1679945154409" duration="771000" />
       <workItem from="1679982223276" duration="10926000" />
-      <workItem from="1682426380430" duration="11873000" />
+      <workItem from="1682426380430" duration="13300000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -210,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682441991339</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[TASK-12] стилизация кнопок пагинации">
+      <created>1682447185447</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682447185447</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +257,8 @@
     <MESSAGE value="[TASK-8] fix отображения данных описания карточки" />
     <MESSAGE value="[TASK-18] Реализавия смены цветовой темы (темная/светлая) согластно макетам" />
     <MESSAGE value="[TASK-12] установлена библиотека пагинации; настроена пагинация; для store настроены экспортирумые типы; popup.tsx удалены лишние комментарии" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-12] установлена библиотека пагинации; настроена пагинация; для store настроены экспортирумые типы; popup.tsx удалены лишние комментарии" />
+    <MESSAGE value="[TASK-12] стилизация кнопок пагинации" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-12] стилизация кнопок пагинации" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
