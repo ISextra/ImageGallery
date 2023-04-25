@@ -1,9 +1,8 @@
+import {AuthorType} from "../../entities/authors/model/types";
+
 interface IGetAuthorByIdProps {
     id: number,
-    authors: Array<{
-        id: number,
-        name: string,
-    }>
+    authors: Array<AuthorType>
 }
 
 export const getAuthorById = (props: IGetAuthorByIdProps) => {

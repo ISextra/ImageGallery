@@ -1,9 +1,8 @@
+import {LocationType} from "../../entities/locations/model/types";
+
 interface IGetLocationByIdProps {
     id: number,
-    locations: Array<{
-        id: number,
-        location: string,
-    }>
+    locations: Array<LocationType>
 }
 
 export const getLocationById = (props: IGetLocationByIdProps) => {

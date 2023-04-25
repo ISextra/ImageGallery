@@ -8,6 +8,10 @@ import paintingsSlice from "../entities/paintings/model/slice";
 import authorsSlice  from "../entities/authors/model/slice";
 import darkModeReducer from "../shared/model/darkModeSlice";
 
+import {AuthorsType} from "../entities/authors/model/types";
+import {LocationsType} from "../entities/locations/model/types";
+import {PaintingsType} from "../entities/paintings/model/types";
+
 const rootReducer = combineReducers({
     locations: locationsSlice,
     paintings: paintingsSlice,
@@ -15,35 +19,15 @@ const rootReducer = combineReducers({
     settings: darkModeReducer,
 })
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = {
-    authors: {
-        list: Array<{
-           id: number,
-           name: string,
-        }>
-    },
-    locations: {
-        list: Array<{
-            id: number,
-            location: string,
-        }>
-    },
-    paintings: {
-        list: Array<{
-            id: number,
-            name: string
-            authorId: number,
-            locationId: number,
-            created: string,
-            imageUrl: string,
-        }>
-    },
+    authors: AuthorsType,
+    locations: LocationsType,
+    paintings: PaintingsType
     settings: {
         darkMode: string
     }
 }
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+
 export type AppDispatch = typeof store.dispatch
 
 const store = configureStore({

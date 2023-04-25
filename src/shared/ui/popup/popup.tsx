@@ -19,32 +19,9 @@ const Popup: React.FC<DropdownOptionsProps> = (props) => {
 
     const darkMode = useAppSelector(state => state.settings.darkMode)
 
-    //
-    // const classNames = useMemo(() => {
-    //     const classNames = {
-    //         popup: ["popup", `popup_${darkMode}`, flag && 'popup_size-medium'],
-    //         popupOption: ["popup__option", `popup__option_${darkMode}`],
-    //     };
-    //
-    //     return {
-    //         popup: classNames.popup.filter(Boolean).join(" "),
-    //     }
-    // }, [darkMode, flag]);
-    //
-    // const getClassNames = () => {
-    //     const classNames = {
-    //         popup: ["popup", `popup_${darkMode}`, flag && 'popup_size-medium'],
-    //         popupOption: ["popup__option", `popup__option_${darkMode}`],
-    //     };
-    //
-    //     return {
-    //         popup: classNames.popup.filter(Boolean).join(" ")
-    //     }
-    // }
-
     return (
         <div
-            className={"popup"}
+            className="popup"
             style={
                 darkMode === "light" ? {
                     background: "white",
