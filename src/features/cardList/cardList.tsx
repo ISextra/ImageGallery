@@ -56,7 +56,13 @@ const CardList: React.FC = () => {
                 onPageChange={handlePageClick}
                 pageCount={pageCount}
                 pageRangeDisplayed={5}
+                marginPagesDisplayed={1}
                 renderOnZeroPageCount={null}
+                containerClassName="pagination"
+                pageLinkClassName="pagination__button"
+                previousLinkClassName="pagination__button previous"
+                nextLinkClassName="pagination__button next"
+                activeLinkClassName="pagination__button active"
             />
         </div>
     );

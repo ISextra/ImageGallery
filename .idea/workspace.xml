@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-8] добавлена ифнормация о авторе и месте создания в информации карточки">
-      <change afterPath="$PROJECT_DIR$/src/entities/authors/model/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/locations/model/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/paintings/model/types/index.ts" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-12] установлена библиотека пагинации; настроена пагинация; для store настроены экспортирумые типы; popup.tsx удалены лишние комментарии">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/libs/getAuthorById.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/libs/getAuthorById.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/libs/getlocationById.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/libs/getlocationById.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +103,7 @@
       <workItem from="1679853594083" duration="2806000" />
       <workItem from="1679945154409" duration="771000" />
       <workItem from="1679982223276" duration="10926000" />
-      <workItem from="1682426380430" duration="7672000" />
+      <workItem from="1682426380430" duration="11873000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -211,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680015206058</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[TASK-12] установлена библиотека пагинации; настроена пагинация; для store настроены экспортирумые типы; popup.tsx удалены лишние комментарии">
+      <created>1682441991339</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1682441991339</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +247,8 @@
     <MESSAGE value="[TASK-8] добавлена ифнормация о авторе и месте создания в информации карточки" />
     <MESSAGE value="[TASK-8] fix отображения данных описания карточки" />
     <MESSAGE value="[TASK-18] Реализавия смены цветовой темы (темная/светлая) согластно макетам" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-18] Реализавия смены цветовой темы (темная/светлая) согластно макетам" />
+    <MESSAGE value="[TASK-12] установлена библиотека пагинации; настроена пагинация; для store настроены экспортирумые типы; popup.tsx удалены лишние комментарии" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-12] установлена библиотека пагинации; настроена пагинация; для store настроены экспортирумые типы; popup.tsx удалены лишние комментарии" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
