@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-12] вынесение пагинации в отдельный компонент: дополнительно вынесение завизимых методов и переменных">
-      <change afterPath="$PROJECT_DIR$/src/features/Filters/lib/types/intex.ts" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-14] создан state объект со значениями фильтрации">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/paintings/ui/inputDateInterval.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputDateInterval.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/filters.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/filters.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/filters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +105,7 @@
       <workItem from="1682426380430" duration="15175000" />
       <workItem from="1682517929008" duration="3011000" />
       <workItem from="1682520996698" duration="3795000" />
-      <workItem from="1682525550070" duration="3969000" />
+      <workItem from="1682525550070" duration="5283000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -242,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682518631505</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[TASK-14] создан state объект со значениями фильтрации">
+      <created>1682529718478</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682529718478</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +281,8 @@
     <MESSAGE value="[TASK-12] стилизация кнопок пагинации" />
     <MESSAGE value="[TASK-12] вынесение пагинации в отдельный компонент, стилизация для разных цветовых режимов" />
     <MESSAGE value="[TASK-12] вынесение пагинации в отдельный компонент: дополнительно вынесение завизимых методов и переменных" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-12] вынесение пагинации в отдельный компонент: дополнительно вынесение завизимых методов и переменных" />
+    <MESSAGE value="[TASK-14] создан state объект со значениями фильтрации" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-14] создан state объект со значениями фильтрации" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

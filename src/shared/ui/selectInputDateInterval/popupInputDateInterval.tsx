@@ -73,7 +73,7 @@ const PopupInputDateInterval: React.FC<IPopupInputDateIntervalProps> = (props) =
                 value={dropdownFilterDateEnd}
                 onChange={event => setDropdownFilterDateEnd(event.target.value)}
                 onKeyDown={(event) => {
-                    if (!/[0-9]/.test(event.key)) {
+                    if (!checkNumberInput(event.key)) {
                         event.preventDefault();
                     }
                 }}
