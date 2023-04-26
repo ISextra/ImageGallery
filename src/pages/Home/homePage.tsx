@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Filters } from "../../features/Filters/ui/filters";
 import { useAppDispatch } from "../../app/hooks";
 import { getPaintings } from "../../entities/paintings/api/getPaintings";
@@ -8,6 +8,7 @@ import CardList from "../../features/cardList/cardList";
 
 const HomePage: React.FC = () => {
     const dispatch = useAppDispatch();
+    const [filtersData, setFiltersData] = useState({})
 
     useEffect(() => {
         dispatch(getPaintings({}));
@@ -17,8 +18,12 @@ const HomePage: React.FC = () => {
 
     return (
         <div>
-            <Filters/>
-            <CardList/>
+            <Filters
+                setFiltersState={setFiltersData}
+            />
+            <CardList
+                filtersData={filtersData}
+            />
         </div>
     );
 };

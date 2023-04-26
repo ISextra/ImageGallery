@@ -33,7 +33,7 @@ const AuthorsDropdown: React.FC<IAuthorsDropdownProps> = (props) => {
         if (elementFromSelect === defaultValue) {
             setFiltersState({
                 ...filtersData,
-                paintingName: null
+                authorName: null
             });
 
             return;
@@ -41,7 +41,7 @@ const AuthorsDropdown: React.FC<IAuthorsDropdownProps> = (props) => {
 
         setFiltersState({
             ...filtersData,
-            paintingName: elementFromSelect
+            authorName: elementFromSelect
         });
     }, [elementFromSelect])
 

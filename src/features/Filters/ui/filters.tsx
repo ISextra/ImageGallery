@@ -6,7 +6,12 @@ import LocationsDropdown from "../../../entities/locations/ui/locationsDropdown"
 import InputDateInterval from "../../../entities/paintings/ui/inputDateInterval";
 import {IFiltersData} from "../lib/types/intex";
 
-export const Filters: React.FC = () => {
+interface IFiltersProps {
+    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersData>>
+}
+
+export const Filters: React.FC<IFiltersProps> = (props) => {
+    const { setFiltersState } = props
     const [filtersData, setFiltersData] = useState<IFiltersData>({
         paintingName: null,
         authorName: null,
@@ -17,7 +22,12 @@ export const Filters: React.FC = () => {
 
     useEffect(() => {
         console.log(filtersData);
+        setFiltersState(filtersData);
     }, [filtersData])
+
+    useEffect(() => {
+
+    }, [])
 
     return (
         <div className="filters">

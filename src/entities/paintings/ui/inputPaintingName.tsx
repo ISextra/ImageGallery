@@ -19,7 +19,7 @@ const InputPaintingName: React.FC<IInputPaintingNameProps> = (props) => {
         if (paintingName === "") {
             setFiltersState({
                 ...filtersData,
-                authorName: null,
+                paintingName: null,
             });
 
             return;
@@ -27,7 +27,7 @@ const InputPaintingName: React.FC<IInputPaintingNameProps> = (props) => {
 
         setFiltersState({
             ...filtersData,
-            authorName: paintingName,
+            paintingName: paintingName,
         });
     }, [paintingName]);
 
