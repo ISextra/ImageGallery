@@ -49,6 +49,45 @@ const CardList: React.FC<ICardListProps> = (props) => {
         return true;
     }
 
+    const isPaintingExistByLocationName = (locationName: string | null | undefined, painting: PaintingType): boolean => {
+        if (locationName !== null && typeof locationName !== "undefined") {
+
+            const location: any = getLocationById({
+                id: painting.locationId,
+                locations
+            })
+
+            if (!Object.keys(location).length) {
+                return false;
+            }
+
+            console.log(location)
+
+            return location.location.indexOf(locationName) !== -1
+        }
+
+        //если фильтр не использован
+        return true;
+    }
+
+    const isPaintingExistByDateStart = (dateStart: string | null | undefined, painting: PaintingType): boolean => {
+        if (dateStart !== null && typeof dateStart !== "undefined") {
+            return Number(filtersData.dateStart) <= Number(painting.created)
+        }
+
+        //если фильтр не использован
+        return true;
+    }
+
+    const isPaintingExistByDateEnd = (dateEnd: string | null | undefined, painting: PaintingType): boolean => {
+        if (dateEnd !== null && typeof dateEnd !== "undefined") {
+            return Number(filtersData.dateEnd) >= Number(painting.created)
+        }
+
+        //если фильтр не использован
+        return true;
+    }
+
     useEffect(() => {
         setFilteredPaintings(paintings)
     }, [paintings])
@@ -56,7 +95,10 @@ const CardList: React.FC<ICardListProps> = (props) => {
     useEffect(() => {
         setFilteredPaintings(paintings.filter((painting) => {
                     return isPaintingExistByPaintingName(filtersData.paintingName, painting) &&
-                        isPaintingExistByAuthorName(filtersData.authorName, painting)
+                        isPaintingExistByAuthorName(filtersData.authorName, painting) &&
+                        isPaintingExistByLocationName(filtersData.locationName, painting) &&
+                        isPaintingExistByDateStart(filtersData.dateStart, painting) &&
+                        isPaintingExistByDateEnd(filtersData.dateEnd, painting)
                 }
             )
         )

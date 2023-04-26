@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-14] fix валидации второго инпута для ввода интервала даты">
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-14] добавлена фильтрация по наименованию и/или автору;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/ui/filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/filters.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +106,7 @@
       <workItem from="1682517929008" duration="3011000" />
       <workItem from="1682520996698" duration="3795000" />
       <workItem from="1682525550070" duration="9920000" />
-      <workItem from="1682535803572" duration="2791000" />
+      <workItem from="1682535803572" duration="3989000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -252,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682531060386</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="[TASK-14] добавлена фильтрация по наименованию и/или автору;">
+      <created>1682538903569</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1682538903569</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +298,8 @@
     <MESSAGE value="[TASK-12] вынесение пагинации в отдельный компонент: дополнительно вынесение завизимых методов и переменных" />
     <MESSAGE value="[TASK-14] создан state объект со значениями фильтрации" />
     <MESSAGE value="[TASK-14] fix валидации второго инпута для ввода интервала даты" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-14] fix валидации второго инпута для ввода интервала даты" />
+    <MESSAGE value="[TASK-14] добавлена фильтрация по наименованию и/или автору;" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-14] добавлена фильтрация по наименованию и/или автору;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
