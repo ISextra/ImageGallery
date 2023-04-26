@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { useAppSelector } from "../../../app/hooks";
 import Dropdown from "../../../shared/ui/dropdown/dropdown";
 import Popup from "../../../shared/ui/popup/popup";
+import {IFiltersData} from "../../../features/Filters/lib/types/intex";
 
-const AuthorsDropdown = () => {
-    const [elementFromSelect, setElementFromSelect] = useState("Автор");
+interface IAuthorsDropdownProps {
+    filtersData: IFiltersData,
+    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersData>>
+}
+
+const AuthorsDropdown: React.FC<IAuthorsDropdownProps> = (props) => {
+    const {
+        filtersData,
+        setFiltersState
+    } = props;
+
+    const defaultValue = "Автор";
+    const [elementFromSelect, setElementFromSelect] = useState(defaultValue);
 
     const getElementFromSelect = (element: string) => {
         setElementFromSelect(element);
@@ -17,7 +29,22 @@ const AuthorsDropdown = () => {
         };
     }))
 
-    // shared/ui/DropdownWithDateInterval
+    useEffect(() => {
+        if (elementFromSelect === defaultValue) {
+            setFiltersState({
+                ...filtersData,
+                paintingName: null
+            });
+
+            return;
+        }
+
+        setFiltersState({
+            ...filtersData,
+            paintingName: elementFromSelect
+        });
+    }, [elementFromSelect])
+
     return (
         <Dropdown
             content={elementFromSelect}
@@ -30,9 +57,6 @@ const AuthorsDropdown = () => {
         />
     );
 };
-
-//вынести в отдельный компонент
-//getAuthors
 
 
 export default AuthorsDropdown;

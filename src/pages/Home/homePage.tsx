@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { Filters } from "../../features/Filters/filters";
+import { Filters } from "../../features/Filters/ui/filters";
 import { useAppDispatch } from "../../app/hooks";
 import { getPaintings } from "../../entities/paintings/api/getPaintings";
 import { getLocations } from "../../entities/locations/api/getLocations";

@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { useAppSelector } from "../../../app/hooks";
 import Dropdown from "../../../shared/ui/dropdown/dropdown";
 import Popup from "../../../shared/ui/popup/popup";
+import {IFiltersData} from "../../../features/Filters/lib/types/intex";
 
-const LocationsDropdown = () => {
-    const [elementFromSelect, setElementFromSelect] = useState("Место");
+interface ILocationsDropdownProps {
+    filtersData: IFiltersData,
+    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersData>>
+}
+
+const LocationsDropdown: React.FC<ILocationsDropdownProps> = (props) => {
+    const {
+        filtersData, setFiltersState
+    } = props;
+
+    const defaultValue = "Место";
+    const [elementFromSelect, setElementFromSelect] = useState(defaultValue);
 
     const getElementFromSelect = (element: string) => {
         setElementFromSelect(element);
@@ -16,6 +27,22 @@ const LocationsDropdown = () => {
             id: item.id,
         };
     }))
+
+    useEffect(() => {
+        if (elementFromSelect === defaultValue) {
+            setFiltersState({
+                ...filtersData,
+                locationName: null
+            });
+
+            return;
+        }
+
+        setFiltersState({
+            ...filtersData,
+            locationName: elementFromSelect
+        });
+    }, [elementFromSelect])
 
     return (
         <Dropdown

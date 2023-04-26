@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-12] вынесение пагинации в отдельный компонент, стилизация для разных цветовых режимов">
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-12] вынесение пагинации в отдельный компонент: дополнительно вынесение завизимых методов и переменных">
+      <change afterPath="$PROJECT_DIR$/src/features/Filters/lib/types/intex.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/ui/inputDateInterval.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputDateInterval.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/filters.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/filters.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/filters.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sabin/WebstormProjects/image-gallery&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\sabin\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/sabin/WebstormProjects/image-gallery",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "ts.external.directory.path": "C:\\Users\\sabin\\WebstormProjects\\image-gallery\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WebstormProjects\image-gallery\public\images" />
@@ -57,11 +65,11 @@
       <recent name="C:\Users\isolovev\WebstormProjects\image-gallery\src\entities\paintings\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sabin\WebstormProjects\image-gallery\src\features\Filters\ui" />
       <recent name="D:\WebstormProjects\image-gallery\src\features\Wrapper\Header\ThemeButton" />
       <recent name="D:\WebstormProjects\image-gallery\public" />
       <recent name="D:\WebstormProjects\image-gallery\src\shared\ui" />
       <recent name="D:\WebstormProjects\image-gallery\src\shared" />
-      <recent name="D:\WebstormProjects\image-gallery\src\shared\dropdown" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -104,7 +112,9 @@
       <workItem from="1679945154409" duration="771000" />
       <workItem from="1679982223276" duration="10926000" />
       <workItem from="1682426380430" duration="15175000" />
-      <workItem from="1682517929008" duration="640000" />
+      <workItem from="1682517929008" duration="3011000" />
+      <workItem from="1682520996698" duration="3795000" />
+      <workItem from="1682525550070" duration="3969000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -225,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682448651248</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[TASK-12] вынесение пагинации в отдельный компонент: дополнительно вынесение завизимых методов и переменных">
+      <created>1682518631505</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682518631505</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +282,8 @@
     <MESSAGE value="[TASK-12] установлена библиотека пагинации; настроена пагинация; для store настроены экспортирумые типы; popup.tsx удалены лишние комментарии" />
     <MESSAGE value="[TASK-12] стилизация кнопок пагинации" />
     <MESSAGE value="[TASK-12] вынесение пагинации в отдельный компонент, стилизация для разных цветовых режимов" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-12] вынесение пагинации в отдельный компонент, стилизация для разных цветовых режимов" />
+    <MESSAGE value="[TASK-12] вынесение пагинации в отдельный компонент: дополнительно вынесение завизимых методов и переменных" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-12] вынесение пагинации в отдельный компонент: дополнительно вынесение завизимых методов и переменных" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

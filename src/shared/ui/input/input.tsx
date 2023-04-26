@@ -1,18 +1,24 @@
-import React, {useState} from 'react';
-import "./input.sass";
+import React, {useEffect, useState} from 'react';
 import {useAppSelector} from "../../../app/hooks";
+import "./input.sass";
 
 interface IInputProps {
     content: string,
+    dataOnChange: React.Dispatch<React.SetStateAction<string>>
 }
 
 const Input: React.FC<IInputProps> = (props) => {
     const {
-        content
+        content,
+        dataOnChange,
     } = props
 
     const [inputValue, setInputValue] = useState("");
-    const darkMode = useAppSelector(state => state.settings.darkMode)
+    const darkMode = useAppSelector(state => state.settings.darkMode);
+
+    useEffect(() => {
+        dataOnChange(inputValue);
+    }, [inputValue])
 
     return (
         <input

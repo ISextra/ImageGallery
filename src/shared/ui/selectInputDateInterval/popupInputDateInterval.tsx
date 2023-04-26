@@ -1,11 +1,35 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './popupInputDateInterval.sass'
 import {useAppSelector} from "../../../app/hooks";
 
-const PopupInputDateInterval: React.FC = () => {
-    const [DropdownFilterDateStart, setDropdownFilterDateStart] = useState("");
-    const [DropdownFilterDateEnd, setDropdownFilterDateEnd] = useState("");
+interface IPopupInputDateIntervalProps {
+    dateStart: string,
+    setDateStart: React.Dispatch<React.SetStateAction<string>>,
+    dateEnd: string,
+    setDateEnd:  React.Dispatch<React.SetStateAction<string>>,
+}
+
+const PopupInputDateInterval: React.FC<IPopupInputDateIntervalProps> = (props) => {
+    const {
+        dateStart,
+        setDateStart,
+        dateEnd,
+        setDateEnd
+    } = props
+
+    const [dropdownFilterDateStart, setDropdownFilterDateStart] = useState(dateStart);
+    const [dropdownFilterDateEnd, setDropdownFilterDateEnd] = useState(dateEnd);
     const darkMode = useAppSelector(state => state.settings.darkMode)
+
+    useEffect(() => {
+        setDateStart(dropdownFilterDateStart);
+        setDateEnd(dropdownFilterDateEnd);
+    }, [dropdownFilterDateStart, dropdownFilterDateEnd])
+
+    const checkNumberInput = (key: string) => {
+        return (key >= '0' && key <= '9') ||
+            ['ArrowLeft','ArrowRight','Delete','Backspace'].includes(key);
+    }
 
     return (
         <div
@@ -24,8 +48,13 @@ const PopupInputDateInterval: React.FC = () => {
                 type="text"
                 placeholder="От"
                 className="popup-inputs__input"
-                value={DropdownFilterDateStart}
+                value={dropdownFilterDateStart}
                 onChange={event => setDropdownFilterDateStart(event.target.value)}
+                onKeyDown={(event) => {
+                    if (!checkNumberInput(event.key)) {
+                        event.preventDefault();
+                    }
+                }}
                 style={
                     darkMode === "light"
                         ? {
@@ -41,8 +70,13 @@ const PopupInputDateInterval: React.FC = () => {
                 type="text"
                 placeholder="До"
                 className="popup-inputs__input"
-                value={DropdownFilterDateEnd}
+                value={dropdownFilterDateEnd}
                 onChange={event => setDropdownFilterDateEnd(event.target.value)}
+                onKeyDown={(event) => {
+                    if (!/[0-9]/.test(event.key)) {
+                        event.preventDefault();
+                    }
+                }}
                 style={
                     darkMode === "light"
                         ? {
