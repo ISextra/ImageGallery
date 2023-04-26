@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-12] стилизация кнопок пагинации">
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-12] вынесение пагинации в отдельный компонент, стилизация для разных цветовых режимов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,8 @@
       <workItem from="1679853594083" duration="2806000" />
       <workItem from="1679945154409" duration="771000" />
       <workItem from="1679982223276" duration="10926000" />
-      <workItem from="1682426380430" duration="13300000" />
+      <workItem from="1682426380430" duration="15175000" />
+      <workItem from="1682517929008" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -219,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682447185447</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="[TASK-12] вынесение пагинации в отдельный компонент, стилизация для разных цветовых режимов">
+      <created>1682448651248</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682448651248</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +264,8 @@
     <MESSAGE value="[TASK-18] Реализавия смены цветовой темы (темная/светлая) согластно макетам" />
     <MESSAGE value="[TASK-12] установлена библиотека пагинации; настроена пагинация; для store настроены экспортирумые типы; popup.tsx удалены лишние комментарии" />
     <MESSAGE value="[TASK-12] стилизация кнопок пагинации" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-12] стилизация кнопок пагинации" />
+    <MESSAGE value="[TASK-12] вынесение пагинации в отдельный компонент, стилизация для разных цветовых режимов" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-12] вынесение пагинации в отдельный компонент, стилизация для разных цветовых режимов" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

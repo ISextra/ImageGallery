@@ -14,20 +14,6 @@ const CardList: React.FC = () => {
     const darkMode = useAppSelector(state => state.settings.darkMode)
 
     const [currentItems, setCurrentItems] = useState<PaintingType[]>([]);
-    const [pageCount, setPageCount] = useState(0);
-    const [itemOffset, setItemOffset] = useState(0);
-    const itemsPerPage = 12;
-
-    useEffect(() => {
-        const endOffset = itemOffset + itemsPerPage;
-        setCurrentItems(paintings.slice(itemOffset, endOffset));
-        setPageCount(Math.ceil(paintings.length / itemsPerPage));
-    }, [itemOffset, itemsPerPage, paintings]);
-
-    const handlePageClick = (event: any) => {
-        const newOffset = (event.selected * itemsPerPage) % paintings.length;
-        setItemOffset(newOffset);
-    }
 
     return (
         <div>
@@ -50,8 +36,8 @@ const CardList: React.FC = () => {
                 }
             </div>
             <Pagination
-                onPageChange={handlePageClick}
-                pageCount={pageCount}
+                paintings={paintings}
+                setCurrentItems={setCurrentItems}
                 darkMode={darkMode}
             />
         </div>
