@@ -1,18 +1,21 @@
 import React, {useEffect, useState} from 'react';
-import './filters.sass'
+
 import InputPaintingName from "../../../entities/paintings/ui/inputPaintingName";
 import AuthorsDropdown from "../../../entities/authors/ui/authorsDropdown";
 import LocationsDropdown from "../../../entities/locations/ui/locationsDropdown";
 import InputDateInterval from "../../../entities/paintings/ui/inputDateInterval";
-import {IFiltersData} from "../lib/types/intex";
+
+import {IFiltersDataType} from "../lib/types/intex";
+
+import './filters.sass'
 
 interface IFiltersProps {
-    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersData>>
+    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersDataType>>
 }
 
 export const Filters: React.FC<IFiltersProps> = (props) => {
     const { setFiltersState } = props
-    const [filtersData, setFiltersData] = useState<IFiltersData>({
+    const [filtersData, setFiltersData] = useState<IFiltersDataType>({
         paintingName: null,
         authorName: null,
         locationName: null,

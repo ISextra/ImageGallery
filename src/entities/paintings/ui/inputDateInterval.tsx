@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import PopupInputDateInterval from "../../../shared/ui/selectInputDateInterval/popupInputDateInterval";
 import Dropdown from "../../../shared/ui/dropdown/dropdown";
-import {IFiltersData} from "../../../features/Filters/lib/types/intex";
+import {IFiltersDataType} from "../../../features/Filters/lib/types/intex";
 
 interface IInputDateIntervalProps {
-    filtersData: IFiltersData,
-    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersData>>
+    filtersData: IFiltersDataType,
+    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersDataType>>
 }
 
 const InputDateInterval: React.FC<IInputDateIntervalProps> = (props) => {

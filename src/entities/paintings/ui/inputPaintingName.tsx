@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import Input from "../../../shared/ui/input/input";
-import {IFiltersData} from "../../../features/Filters/lib/types/intex";
+import {IFiltersDataType} from "../../../features/Filters/lib/types/intex";
 
 interface IInputPaintingNameProps {
-    filtersData: IFiltersData,
-    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersData>>
+    filtersData: IFiltersDataType,
+    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersDataType>>
 }
 
 const InputPaintingName: React.FC<IInputPaintingNameProps> = (props) => {

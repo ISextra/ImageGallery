@@ -1,15 +1,19 @@
 import React, {useEffect, useState} from 'react';
+
 import Card from "../../shared/ui/card/card";
 import Pagination from "../../shared/ui/pagination/pagination";
+
 import {useAppSelector} from "../../app/hooks";
 import {getLocationById} from "../../shared/libs/getlocationById";
 import {getAuthorById} from "../../shared/libs/getAuthorById";
+
 import {PaintingType} from "../../entities/paintings/model/types";
+import {IFiltersDataType} from "../Filters/lib/types/intex";
+
 import "./cardList.sass"
-import {IFiltersData} from "../Filters/lib/types/intex";
 
 interface ICardListProps {
-    filtersData: IFiltersData,
+    filtersData: IFiltersDataType,
 }
 
 const CardList: React.FC<ICardListProps> = (props) => {
@@ -89,10 +93,6 @@ const CardList: React.FC<ICardListProps> = (props) => {
     }
 
     useEffect(() => {
-        setFilteredPaintings(paintings)
-    }, [paintings])
-
-    useEffect(() => {
         setFilteredPaintings(paintings.filter((painting) => {
                     return isPaintingExistByPaintingName(filtersData.paintingName, painting) &&
                         isPaintingExistByAuthorName(filtersData.authorName, painting) &&
@@ -102,7 +102,7 @@ const CardList: React.FC<ICardListProps> = (props) => {
                 }
             )
         )
-    }, [filtersData])
+    }, [paintings, filtersData])
 
     return (
         <div>

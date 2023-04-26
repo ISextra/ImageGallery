@@ -2,11 +2,11 @@ import React, {useEffect, useState} from 'react';
 import { useAppSelector } from "../../../app/hooks";
 import Dropdown from "../../../shared/ui/dropdown/dropdown";
 import Popup from "../../../shared/ui/popup/popup";
-import {IFiltersData} from "../../../features/Filters/lib/types/intex";
+import {IFiltersDataType} from "../../../features/Filters/lib/types/intex";
 
 interface ILocationsDropdownProps {
-    filtersData: IFiltersData,
-    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersData>>
+    filtersData: IFiltersDataType,
+    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersDataType>>
 }
 
 const LocationsDropdown: React.FC<ILocationsDropdownProps> = (props) => {

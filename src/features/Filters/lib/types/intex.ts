@@ -1,4 +1,4 @@
-export type IFiltersData = {
+export type IFiltersDataType = {
     paintingName?: string | null,
     authorName?: string | null,
     locationName?: string | null,

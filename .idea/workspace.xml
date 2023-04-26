@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-14] добавлена фильтрация по наименованию и/или автору;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-14] добавлена фильтрация по месту и/или дате создания;">
       <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +105,7 @@
       <workItem from="1682517929008" duration="3011000" />
       <workItem from="1682520996698" duration="3795000" />
       <workItem from="1682525550070" duration="9920000" />
-      <workItem from="1682535803572" duration="3989000" />
+      <workItem from="1682535803572" duration="4222000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -255,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682538903569</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="[TASK-14] добавлена фильтрация по месту и/или дате создания;">
+      <created>1682540002360</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682540002360</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +305,8 @@
     <MESSAGE value="[TASK-14] создан state объект со значениями фильтрации" />
     <MESSAGE value="[TASK-14] fix валидации второго инпута для ввода интервала даты" />
     <MESSAGE value="[TASK-14] добавлена фильтрация по наименованию и/или автору;" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-14] добавлена фильтрация по наименованию и/или автору;" />
+    <MESSAGE value="[TASK-14] добавлена фильтрация по месту и/или дате создания;" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-14] добавлена фильтрация по месту и/или дате создания;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
