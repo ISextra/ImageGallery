@@ -1,4 +1,4 @@
-import React, {createContext} from 'react';
+import React from 'react';
 import './index.sass';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import links from "../shared/constants/links";

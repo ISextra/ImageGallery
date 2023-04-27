@@ -1,7 +1,7 @@
 .card
   position: relative
-  width: 320px
-  height: 285px
+  width: 360px
+  height: 275px
   border-radius: 8px
   overflow: hidden
   margin-bottom: 20px
@@ -15,7 +15,7 @@
     z-index: 1
   &__description-container
     position: absolute
-    top: 251px
+    top: 241px
     transition: top 500ms ease 0s
     width: 100%
     z-index: 2
@@ -33,12 +33,37 @@
       font-size: 18px
       padding: 5px
 
-@media screen and (max-width: 320px)
+@media (min-width: 320px)
   .card
     width: 280px
     height: 210px
     &__description-container
       top: 176px
+
+@media (min-width: 768px)
+  .card
+    width: 340px
+    height: 250px
+    &__description-container
+      top: 216px
+
+@media (min-width: 1024px)
+  .card
+    width: 300px
+    height: 230px
+    &__description-container
+      top: 196px
+
+@media (min-width: 1366px)
+  .card
+    width: 360px
+    height: 275px
+    &__description-container
+      top: 241px
+
+
+
+
 
 
 

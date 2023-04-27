@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-16] изменение параметров в типах на необязательные; создание страниц с карточками для url /picture/:id">
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-16] fix положения картики на странице карточки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/providers/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/styles/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/index.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/ui/filters.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/filters.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/input/input.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/input/input.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +125,7 @@
       <workItem from="1682525550070" duration="9920000" />
       <workItem from="1682535803572" duration="7523000" />
       <workItem from="1682543572311" duration="3113000" />
-      <workItem from="1682575074977" duration="1382000" />
+      <workItem from="1682575074977" duration="13541000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -281,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682575580147</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="[TASK-16] fix положения картики на странице карточки">
+      <created>1682576617814</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1682576617814</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +323,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[TASK-2] добавление cass, добавление BrowserRouter, изменение архитектуры на Feature-Sliced Design" />
     <MESSAGE value="[TASK-3] Реализация общего layout приложения (Разделить на основные блоки);&#10;Исправление ошибки ESLint: TypeError: this.libOptions.parse is not a function" />
     <MESSAGE value="[TASK-3] header css style fix" />
     <MESSAGE value="[TASK-3] NameFilter основа" />
@@ -327,7 +347,8 @@
     <MESSAGE value="[TASK-14] добавлена фильтрация по месту и/или дате создания;" />
     <MESSAGE value="[TASK-14] удаление лишнего useEffect; style code fix" />
     <MESSAGE value="[TASK-16] изменение параметров в типах на необязательные; создание страниц с карточками для url /picture/:id" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-16] изменение параметров в типах на необязательные; создание страниц с карточками для url /picture/:id" />
+    <MESSAGE value="[TASK-16] fix положения картики на странице карточки" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-16] fix положения картики на странице карточки" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
