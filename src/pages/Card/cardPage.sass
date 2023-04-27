@@ -1,11 +1,25 @@
 .cardPage
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: 100%
   font-size: 28px
   vertical-align: center
   margin-top: 20px
   border: none
+  &__description
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    border: none
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+    & b
+      inline-size: auto
+      word-break: break-all
 
-.dark
+.description-dark
   color: white
 
-.light
+.description-light
   color: black
+
