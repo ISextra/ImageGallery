@@ -4,6 +4,7 @@ import "./card.sass"
 import {PaintingType} from "../../../entities/paintings/model/types";
 import {AuthorType} from "../../../entities/authors/model/types";
 import {LocationType} from "../../../entities/locations/model/types";
+import {Link} from "react-router-dom";
 
 
 interface ICardProps {
@@ -49,28 +50,33 @@ const Card: React.FC<ICardProps> = (props) => {
             onMouseLeave={handleMouseLeave}
 
         >
-            <Image
-                src={`${process.env.REACT_APP_FETCH_URL}${painting!.imageUrl}`}
-                alt={painting!.name}
-            />
-            <div
-                className="card__description-container"
-                ref={descriptionRef}
+            <Link
+                to={`/picture/${painting?.id}`}
+                className="cardLink"
             >
+                <Image
+                    src={`${process.env.REACT_APP_FETCH_URL}${painting!.imageUrl}`}
+                    alt={painting!.name}
+                />
                 <div
-                    className="card__description-container_card-name"
-                    ref={nameDescriptionRef}
+                    className="card__description-container"
+                    ref={descriptionRef}
                 >
-                    {painting!.name}
+                    <div
+                        className="card__description-container_card-name"
+                        ref={nameDescriptionRef}
+                    >
+                        {painting!.name}
+                    </div>
+                    <div
+                        className="card__description-container_card-creator"
+                    >
+                        {`Автор: ${author!.name || "-"}`}<br/>
+                        {`Дата создания: ${painting!.created}`}<br/>
+                        {`Место: ${location!.location}`}<br/>
+                    </div>
                 </div>
-                <div
-                    className="card__description-container_card-creator"
-                >
-                    {`Автор: ${author!.name || "-"}`}<br/>
-                    {`Дата создания: ${painting!.created}`}<br/>
-                    {`Место: ${location!.location}`}<br/>
-                </div>
-            </div>
+            </Link>
         </div>
     );
 };
