@@ -3,11 +3,11 @@ import "./popup.sass";
 import {useAppSelector} from "../../../app/hooks";
 
 interface DropdownOptionsProps {
-    onElementClick: (element: string) => void;
+    onElementClick: (element: string | undefined) => void;
 
     options: Array<{
-        text: string,
-        id: number
+        text: string | undefined,
+        id: number | undefined
     }>
 }
 

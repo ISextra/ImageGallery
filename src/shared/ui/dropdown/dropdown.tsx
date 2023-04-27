@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './dropdown.sass'
 import {useAppSelector} from "../../../app/hooks";
 interface DropdownFilterProps {
-    content: string;
+    content: string | undefined;
     popupContent: React.ReactNode
 }
 const Dropdown: React.FC<DropdownFilterProps> = (props) => {

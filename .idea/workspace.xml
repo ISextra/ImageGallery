@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-14] добавлена фильтрация по месту и/или дате создания;">
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-16] удаление лишнего useEffect; style code fix">
+      <change afterPath="$PROJECT_DIR$/src/shared/libs/getPaintingById.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/authors/model/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/model/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/locations/model/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/model/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/types/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/constants/links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/constants/links.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/libs/getAuthorById.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/libs/getAuthorById.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/libs/getlocationById.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/libs/getlocationById.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/image/image.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +47,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -105,7 +122,9 @@
       <workItem from="1682517929008" duration="3011000" />
       <workItem from="1682520996698" duration="3795000" />
       <workItem from="1682525550070" duration="9920000" />
-      <workItem from="1682535803572" duration="4222000" />
+      <workItem from="1682535803572" duration="7523000" />
+      <workItem from="1682543572311" duration="3113000" />
+      <workItem from="1682575074977" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -261,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682540002360</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="[TASK-14] удаление лишнего useEffect; style code fix">
+      <created>1682540424995</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1682540424995</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +332,8 @@
     <MESSAGE value="[TASK-14] fix валидации второго инпута для ввода интервала даты" />
     <MESSAGE value="[TASK-14] добавлена фильтрация по наименованию и/или автору;" />
     <MESSAGE value="[TASK-14] добавлена фильтрация по месту и/или дате создания;" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-14] добавлена фильтрация по месту и/или дате создания;" />
+    <MESSAGE value="[TASK-14] удаление лишнего useEffect; style code fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-14] удаление лишнего useEffect; style code fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

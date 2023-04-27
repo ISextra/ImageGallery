@@ -19,9 +19,9 @@ const AuthorsDropdown: React.FC<IAuthorsDropdownProps> = (props) => {
     } = props;
 
     const defaultValue = "Автор";
-    const [elementFromSelect, setElementFromSelect] = useState(defaultValue);
+    const [elementFromSelect, setElementFromSelect] = useState<string | undefined>(defaultValue);
 
-    const getElementFromSelect = (element: string) => {
+    const getElementFromSelect = (element: string | undefined) => {
         setElementFromSelect(element);
     }
 

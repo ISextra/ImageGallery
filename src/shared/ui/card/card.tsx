@@ -1,25 +1,15 @@
-import React, {MouseEventHandler, useEffect} from 'react';
+import React, {MouseEventHandler} from 'react';
 import Image from "../image/image";
 import "./card.sass"
+import {PaintingType} from "../../../entities/paintings/model/types";
+import {AuthorType} from "../../../entities/authors/model/types";
+import {LocationType} from "../../../entities/locations/model/types";
 
 
 interface ICardProps {
-    painting: {
-        id: number,
-        name: string
-        authorId: number,
-        locationId: number,
-        created: string,
-        imageUrl: string,
-    },
-    author: {
-        id?: number,
-        name?: string
-    },
-    location: {
-        id?: number,
-        location?: string,
-    }
+    painting: PaintingType | undefined,
+    author: AuthorType | undefined,
+    location: LocationType | undefined
 }
 
 const Card: React.FC<ICardProps> = (props) => {
@@ -60,8 +50,8 @@ const Card: React.FC<ICardProps> = (props) => {
 
         >
             <Image
-                src={`${process.env.REACT_APP_FETCH_URL}${painting.imageUrl}`}
-                alt={painting.name}
+                src={`${process.env.REACT_APP_FETCH_URL}${painting!.imageUrl}`}
+                alt={painting!.name}
             />
             <div
                 className="card__description-container"
@@ -71,14 +61,14 @@ const Card: React.FC<ICardProps> = (props) => {
                     className="card__description-container_card-name"
                     ref={nameDescriptionRef}
                 >
-                    {painting.name}
+                    {painting!.name}
                 </div>
                 <div
                     className="card__description-container_card-creator"
                 >
-                    {`Автор: ${author.name || "-"}`}<br/>
-                    {`Дата создания: ${painting.created}`}<br/>
-                    {`Место: ${location.location}`}<br/>
+                    {`Автор: ${author!.name || "-"}`}<br/>
+                    {`Дата создания: ${painting!.created}`}<br/>
+                    {`Место: ${location!.location}`}<br/>
                 </div>
             </div>
         </div>

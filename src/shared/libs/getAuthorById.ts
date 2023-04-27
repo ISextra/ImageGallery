@@ -1,7 +1,7 @@
 import {AuthorType} from "../../entities/authors/model/types";
 
 interface IGetAuthorByIdProps {
-    id: number,
+    id: number | undefined,
     authors: Array<AuthorType>
 }
 

@@ -3,7 +3,7 @@ import "./image.sass"
 
 interface IImageProps {
     src: string,
-    alt: string,
+    alt: string | undefined,
 }
 
 const Image: React.FC<IImageProps> = (props) => {

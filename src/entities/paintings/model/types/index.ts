@@ -3,10 +3,10 @@ export type PaintingsType = {
 }
 
 export type PaintingType = {
-    id: number,
-    name: string
-    authorId: number,
-    locationId: number,
-    created: string,
-    imageUrl: string,
+    id?: number,
+    name?: string
+    authorId?: number,
+    locationId?: number,
+    created?: string,
+    imageUrl?: string,
 }

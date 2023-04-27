@@ -1,6 +1,6 @@
 const links = {
     "homePage": "/",
-    "cardPage": "card",
+    "cardPage": "picture/:id",
     "padeNotFound": "*",
 }
 

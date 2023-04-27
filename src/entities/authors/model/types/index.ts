@@ -3,6 +3,6 @@ export type AuthorsType = {
 }
 
 export type AuthorType = {
-    id: number,
-    name: string,
+    id?: number,
+    name?: string,
 }

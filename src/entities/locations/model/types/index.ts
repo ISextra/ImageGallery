@@ -3,6 +3,6 @@ export type LocationsType = {
 }
 
 export type LocationType = {
-    id: number,
-    location: string,
+    id?: number,
+    location?: string,
 }

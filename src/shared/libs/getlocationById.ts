@@ -1,7 +1,7 @@
 import {LocationType} from "../../entities/locations/model/types";
 
 interface IGetLocationByIdProps {
-    id: number,
+    id: number | undefined,
     locations: Array<LocationType>
 }
 

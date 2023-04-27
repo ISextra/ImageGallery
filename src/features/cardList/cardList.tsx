@@ -28,7 +28,7 @@ const CardList: React.FC<ICardListProps> = (props) => {
 
     const isPaintingExistByPaintingName = (paintingName: string | null | undefined, painting: PaintingType): boolean => {
         if (paintingName !== null && typeof paintingName !== "undefined") {
-            return painting.name.indexOf(paintingName) !== -1
+            return painting.name!.indexOf(paintingName) !== -1
         }
 
         //если фильтр не использован
