@@ -16,9 +16,11 @@ const LocationsDropdown: React.FC<ILocationsDropdownProps> = (props) => {
 
     const defaultValue = "Место";
     const [elementFromSelect, setElementFromSelect] = useState<string | undefined>(defaultValue);
+    const [elementIdFromSelect, setElementIdFromSelect] = useState<string | undefined>(defaultValue);
 
-    const getElementFromSelect = (element: string | undefined) => {
+    const getElementFromSelect = (element: string | undefined, elementId:  string | undefined) => {
         setElementFromSelect(element);
+        setElementIdFromSelect(elementId)
     }
 
     const locations = useAppSelector(state => state.locations.list.map(item => {
@@ -32,7 +34,7 @@ const LocationsDropdown: React.FC<ILocationsDropdownProps> = (props) => {
         if (elementFromSelect === defaultValue) {
             setFiltersState({
                 ...filtersData,
-                locationName: null
+                locationId: null
             });
 
             return;
@@ -40,7 +42,7 @@ const LocationsDropdown: React.FC<ILocationsDropdownProps> = (props) => {
 
         setFiltersState({
             ...filtersData,
-            locationName: elementFromSelect
+            locationId: elementIdFromSelect
         });
     }, [elementFromSelect])
 

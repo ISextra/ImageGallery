@@ -4,25 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-16] fix положения картики на странице карточки">
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-17] Добавление адаптива для всех страниц">
+      <change afterPath="$PROJECT_DIR$/src/entities/paintings/api/getPaintingsCount.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/providers/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/styles/index.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/styles/index.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/ui/filters.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/filters.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/api/getPaintings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/api/getPaintings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/lib/types/intex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/lib/types/intex.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/ui/filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/filters.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/input/input.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/input/input.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +132,10 @@
       <workItem from="1682525550070" duration="9920000" />
       <workItem from="1682535803572" duration="7523000" />
       <workItem from="1682543572311" duration="3113000" />
-      <workItem from="1682575074977" duration="13541000" />
+      <workItem from="1682575074977" duration="35511000" />
+      <workItem from="1682760125348" duration="13127000" />
+      <workItem from="1682781938780" duration="4569000" />
+      <workItem from="1682962652685" duration="12096000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -302,7 +312,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682576617814</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="[TASK-16] Добавление описания для карточки; удаление неиспользуемых зависимостей проекта">
+      <created>1682589828704</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1682589828704</updated>
+    </task>
+    <task id="LOCAL-00027" summary="[TASK-17] Добавление адаптива для всех страниц">
+      <created>1682589925990</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682589925990</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,15 +340,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[TASK-3] Реализация общего layout приложения (Разделить на основные блоки);&#10;Исправление ошибки ESLint: TypeError: this.libOptions.parse is not a function" />
-    <MESSAGE value="[TASK-3] header css style fix" />
     <MESSAGE value="[TASK-3] NameFilter основа" />
     <MESSAGE value="[TASK-6] Реализация UI компонента с фильтров по датам (за основу взять компонент Dropdown)" />
     <MESSAGE value="[TASK-3] fetch setup" />
@@ -348,7 +376,9 @@
     <MESSAGE value="[TASK-14] удаление лишнего useEffect; style code fix" />
     <MESSAGE value="[TASK-16] изменение параметров в типах на необязательные; создание страниц с карточками для url /picture/:id" />
     <MESSAGE value="[TASK-16] fix положения картики на странице карточки" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-16] fix положения картики на странице карточки" />
+    <MESSAGE value="[TASK-16] Добавление описания для карточки; удаление неиспользуемых зависимостей проекта" />
+    <MESSAGE value="[TASK-17] Добавление адаптива для всех страниц" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-17] Добавление адаптива для всех страниц" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

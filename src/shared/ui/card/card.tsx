@@ -5,6 +5,7 @@ import {PaintingType} from "../../../entities/paintings/model/types";
 import {AuthorType} from "../../../entities/authors/model/types";
 import {LocationType} from "../../../entities/locations/model/types";
 import {Link} from "react-router-dom";
+import {useAppSelector} from "../../../app/hooks";
 
 
 interface ICardProps {
@@ -19,6 +20,9 @@ const Card: React.FC<ICardProps> = (props) => {
         author,
         location
     } = props
+
+    const isLoading = useAppSelector(state => state.paintings.isLoading);
+    const darkMode = useAppSelector(state => state.settings.darkMode);
 
     const cardRef = React.useRef<HTMLDivElement>(null);
     const descriptionRef = React.useRef<HTMLDivElement>(null);
@@ -37,7 +41,6 @@ const Card: React.FC<ICardProps> = (props) => {
         if (descriptionRef.current && cardRef.current && nameDescriptionRef.current) {
             nameDescriptionRef.current.style.whiteSpace = "nowrap";
             nameDescriptionRef.current.style.overflow = "hidden";
-
             descriptionRef.current.style.top = cardRef.current.offsetHeight - nameDescriptionRef.current.offsetHeight + "px";
         }
     }
@@ -48,34 +51,40 @@ const Card: React.FC<ICardProps> = (props) => {
             ref={cardRef}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-
         >
             <Link
                 to={`/picture/${painting?.id}`}
                 className="cardLink"
             >
-                <Image
-                    src={`${process.env.REACT_APP_FETCH_URL}${painting!.imageUrl}`}
-                    alt={painting!.name}
-                />
-                <div
-                    className="card__description-container"
-                    ref={descriptionRef}
-                >
-                    <div
-                        className="card__description-container_card-name"
-                        ref={nameDescriptionRef}
-                    >
-                        {painting!.name}
-                    </div>
-                    <div
-                        className="card__description-container_card-creator"
-                    >
-                        {`Автор: ${author!.name || "-"}`}<br/>
-                        {`Дата создания: ${painting!.created}`}<br/>
-                        {`Место: ${location!.location}`}<br/>
-                    </div>
-                </div>
+                {
+                    isLoading ? <div className={`card__loading ${darkMode}`}>
+                            Loading...
+                        </div>
+                        : <div>
+                            <Image
+                                src={`${process.env.REACT_APP_FETCH_URL}${painting?.imageUrl}`}
+                                alt={painting?.name}
+                            />
+                            <div
+                                className="card__description-container"
+                                ref={descriptionRef}
+                            >
+                                <div
+                                    className="card__description-container_card-name"
+                                    ref={nameDescriptionRef}
+                                >
+                                    {painting?.name}
+                                </div>
+                                <div
+                                    className="card__description-container_card-creator"
+                                >
+                                    {`Автор: ${author?.name || "-"}`}<br/>
+                                    {`Дата создания: ${painting?.created}`}<br/>
+                                    {`Место: ${location?.location}`}<br/>
+                                </div>
+                            </div>
+                        </div>
+                }
             </Link>
         </div>
     );

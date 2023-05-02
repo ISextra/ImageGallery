@@ -9,12 +9,7 @@ const Title: React.FC = () => {
     return (
         <Link
             to={"/"}
-            className="title"
-            style={
-                darkMode === "light" ? {
-                    color: "black"
-                } : {}
-            }
+            className={`title title-${darkMode}`}
         >
             ImageGallery
         </Link>

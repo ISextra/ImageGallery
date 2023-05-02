@@ -1,9 +1,9 @@
-import React, {useMemo} from 'react';
+import React from 'react';
 import "./popup.sass";
 import {useAppSelector} from "../../../app/hooks";
 
 interface DropdownOptionsProps {
-    onElementClick: (element: string | undefined) => void;
+    onElementClick: (element: string | undefined, elementId: string | undefined) => void;
 
     options: Array<{
         text: string | undefined,
@@ -36,7 +36,7 @@ const Popup: React.FC<DropdownOptionsProps> = (props) => {
                         className="popup__option"
                         key={item.id}
                         onClick={() => {
-                            onElementClick(item.text);
+                            onElementClick(item.text, `${item.id}`);
                         }}
                         style={
                             darkMode === "light"

@@ -1,21 +1,30 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { getPaintings } from "../api/getPaintings";
+import {getPaintings} from "../api/getPaintings";
+import {getPaintingsCount} from "../api/getPaintingsCount";
 
 const paintingsSlice = createSlice({
     name: 'paintings',
     initialState: {
-       list: [],
+        isLoading: true,
+        list: [],
+        totalCount: 10,
     },
     reducers: {
     },
     extraReducers: (builder) => {
-        // Add reducers for additional action types here, and handle loading state as needed
+        builder.addCase(getPaintings.pending, (state) => {
+            state.isLoading = true;
+        });
+
         builder.addCase(getPaintings.fulfilled, (state, action) => {
-            // Add user to the state array
+            state.isLoading = false;
             state.list = action.payload;
-        })
+        });
+
+        builder.addCase(getPaintingsCount.fulfilled, (state, action) => {
+            state.totalCount = action.payload;
+        });
     },
 })
 
-export const {  } = paintingsSlice.actions;
 export default paintingsSlice.reducer;

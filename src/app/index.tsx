@@ -8,21 +8,30 @@ import CardPage from "../pages/Card/cardPage";
 import PageNotFound from "../pages/NotFound/pageNotFound";
 import { Provider } from 'react-redux'
 import store from "./store"
+import axios from "axios";
+
+const postman = axios.create({
+    baseURL: `${process.env.REACT_APP_FETCH_URL}/paintings`,
+})
+const AxiosContext = React.createContext(postman);
 
 function App() {
     return (
         <Provider store={store}>
-            <BrowserRouter>
-                <Routes>
-                    <Route path={links.homePage} element={<Wrapper/>}>
-                        <Route index element={<HomePage/>}/>
-                        <Route path={links.cardPage} element={<CardPage/>} />
-                        <Route path={links.padeNotFound} element={<PageNotFound/>} />
-                    </Route>
-                </Routes>
-            </BrowserRouter>
+            <AxiosContext.Provider value={postman}>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path={links.homePage} element={<Wrapper/>}>
+                            <Route index element={<HomePage/>}/>
+                            <Route path={links.cardPage} element={<CardPage/>} />
+                            <Route path={links.padeNotFound} element={<PageNotFound/>} />
+                        </Route>
+                    </Routes>
+                </BrowserRouter>
+            </AxiosContext.Provider>
         </Provider>
     );
 }
 
+export { postman }
 export default App;

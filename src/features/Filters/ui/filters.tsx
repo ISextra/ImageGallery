@@ -17,20 +17,15 @@ export const Filters: React.FC<IFiltersProps> = (props) => {
     const { setFiltersState } = props
     const [filtersData, setFiltersData] = useState<IFiltersDataType>({
         paintingName: null,
-        authorName: null,
-        locationName: null,
+        authorId: null,
+        locationId: null,
         dateStart: null,
         dateEnd: null
     });
 
     useEffect(() => {
-        console.log(filtersData);
         setFiltersState(filtersData);
     }, [filtersData])
-
-    useEffect(() => {
-
-    }, [])
 
     return (
         <div className="filters">

@@ -20,9 +20,11 @@ const AuthorsDropdown: React.FC<IAuthorsDropdownProps> = (props) => {
 
     const defaultValue = "Автор";
     const [elementFromSelect, setElementFromSelect] = useState<string | undefined>(defaultValue);
+    const [elementIdFromSelect, setElementIdFromSelect] = useState<string | undefined>(defaultValue);
 
-    const getElementFromSelect = (element: string | undefined) => {
+    const getElementFromSelect = (element: string | undefined, elementId: string | undefined) => {
         setElementFromSelect(element);
+        setElementIdFromSelect(elementId)
     }
 
     const authors = useAppSelector(state => state.authors.list.map(item => {
@@ -36,7 +38,7 @@ const AuthorsDropdown: React.FC<IAuthorsDropdownProps> = (props) => {
         if (elementFromSelect === defaultValue) {
             setFiltersState({
                 ...filtersData,
-                authorName: null
+                authorId: null
             });
 
             return;
@@ -44,7 +46,7 @@ const AuthorsDropdown: React.FC<IAuthorsDropdownProps> = (props) => {
 
         setFiltersState({
             ...filtersData,
-            authorName: elementFromSelect
+            authorId: elementIdFromSelect
         });
     }, [elementFromSelect])
 

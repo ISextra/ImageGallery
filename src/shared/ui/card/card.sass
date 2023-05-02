@@ -5,6 +5,12 @@
   border-radius: 8px
   overflow: hidden
   margin-bottom: 20px
+  &__loading
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+    text-align: center
   &__image
     max-width: none
     min-width: auto
@@ -32,6 +38,13 @@
       width: 100%
       font-size: 18px
       padding: 5px
+
+.dark
+  color: white
+  border: 1px solid white
+.light
+  color: black
+  border: 1px solid black
 
 @media (min-width: 320px)
   .card

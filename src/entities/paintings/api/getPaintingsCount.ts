@@ -1,5 +1,5 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
-import {FETCH_PAINTINGS} from "../model/actions";
+import {GET_PAINTINGS_COUNT} from "../model/actions";
 import {postman} from "../../../app";
 
 interface IFetchPaintings {
@@ -13,13 +13,17 @@ interface IFetchPaintings {
     locationId?: string | null,
 }
 
-export const getPaintings = createAsyncThunk(
-    `${FETCH_PAINTINGS}`,
+export const getPaintingsCount = createAsyncThunk(
+    `${GET_PAINTINGS_COUNT}`,
     async (payload: IFetchPaintings) => {
         const response = await postman.get(`/`, {
-            params: payload
+            params: {
+                ...payload,
+                _page: 1,
+                _limit: 1e9,
+            }
         });
 
-        return response.data;
+        return response.data.length;
     }
 )

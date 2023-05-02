@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from 'react';
+import {useAppDispatch, useAppSelector} from "../../app/hooks";
 
 import Card from "../../shared/ui/card/card";
 import Pagination from "../../shared/ui/pagination/pagination";
 
-import {useAppSelector} from "../../app/hooks";
 import {getLocationById} from "../../shared/libs/getlocationById";
 import {getAuthorById} from "../../shared/libs/getAuthorById";
+import {getPaintings} from "../../entities/paintings/api/getPaintings";
+import {getPaintingsCount} from "../../entities/paintings/api/getPaintingsCount";
 
-import {PaintingType} from "../../entities/paintings/model/types";
 import {IFiltersDataType} from "../Filters/lib/types/intex";
 
 import "./cardList.sass"
@@ -17,98 +18,49 @@ interface ICardListProps {
 }
 
 const CardList: React.FC<ICardListProps> = (props) => {
-    const { filtersData } = props
+    const { filtersData } = props;
+    const dispatch = useAppDispatch();
+
     const paintings = useAppSelector((state) => state.paintings.list);
     const authors = useAppSelector((state) => state.authors.list);
     const locations = useAppSelector((state) => state.locations.list);
+    const listLength = useAppSelector((state) => state.paintings.totalCount);
     const darkMode = useAppSelector((state)=> state.settings.darkMode);
 
-    const [filteredPaintings, setFilteredPaintings] = useState<PaintingType[]>([]);
-    const [currentItems, setCurrentItems] = useState<PaintingType[]>([]);
+    const [currentPage, setCurrentPage] = useState<number>(1);
 
-    const isPaintingExistByPaintingName = (paintingName: string | null | undefined, painting: PaintingType): boolean => {
-        if (paintingName !== null && typeof paintingName !== "undefined") {
-            return painting.name!.indexOf(paintingName) !== -1
-        }
-
-        //если фильтр не использован
-        return true;
-    }
-
-    const isPaintingExistByAuthorName = (authorName: string | null | undefined, painting: PaintingType): boolean => {
-        if (authorName !== null && typeof authorName !== "undefined") {
-            const author: any = getAuthorById({
-                id: painting.authorId,
-                authors
-            })
-
-            if (!Object.keys(author).length) {
-                return false;
-            }
-
-            return author.name.indexOf(authorName) !== -1
-        }
-
-        //если фильтр не использован
-        return true;
-    }
-
-    const isPaintingExistByLocationName = (locationName: string | null | undefined, painting: PaintingType): boolean => {
-        if (locationName !== null && typeof locationName !== "undefined") {
-
-            const location: any = getLocationById({
-                id: painting.locationId,
-                locations
-            })
-
-            if (!Object.keys(location).length) {
-                return false;
-            }
-
-            console.log(location)
-
-            return location.location.indexOf(locationName) !== -1
-        }
-
-        //если фильтр не использован
-        return true;
-    }
-
-    const isPaintingExistByDateStart = (dateStart: string | null | undefined, painting: PaintingType): boolean => {
-        if (dateStart !== null && typeof dateStart !== "undefined") {
-            return Number(filtersData.dateStart) <= Number(painting.created)
-        }
-
-        //если фильтр не использован
-        return true;
-    }
-
-    const isPaintingExistByDateEnd = (dateEnd: string | null | undefined, painting: PaintingType): boolean => {
-        if (dateEnd !== null && typeof dateEnd !== "undefined") {
-            return Number(filtersData.dateEnd) >= Number(painting.created)
-        }
-
-        //если фильтр не использован
-        return true;
-    }
+    const cardsPerList = 12;
 
     useEffect(() => {
-        setFilteredPaintings(paintings.filter((painting) => {
-                    return isPaintingExistByPaintingName(filtersData.paintingName, painting) &&
-                        isPaintingExistByAuthorName(filtersData.authorName, painting) &&
-                        isPaintingExistByLocationName(filtersData.locationName, painting) &&
-                        isPaintingExistByDateStart(filtersData.dateStart, painting) &&
-                        isPaintingExistByDateEnd(filtersData.dateEnd, painting)
-                }
-            )
-        )
-    }, [paintings, filtersData])
+        setCurrentPage(1);
+    }, [filtersData])
+
+    useEffect(() => {
+        dispatch(getPaintings({
+            q: filtersData.paintingName,
+            authorId: filtersData.authorId,
+            locationId: filtersData.locationId,
+            created_gte: filtersData.dateStart,
+            created_lte: filtersData.dateEnd,
+            _page: currentPage,
+            _limit: cardsPerList,
+        }));
+
+        dispatch(getPaintingsCount({
+            q: filtersData.paintingName,
+            authorId: filtersData.authorId,
+            locationId: filtersData.locationId,
+            created_gte: filtersData.dateStart,
+            created_lte: filtersData.dateEnd,
+        }));
+
+    }, [dispatch, filtersData, currentPage])
 
     return (
         <div>
             <div className="cardList">
                 {
-                    currentItems.map(item => {
+                    paintings.map(item => {
                         return <Card
                             key={item.id}
                             painting={item}
@@ -125,9 +77,11 @@ const CardList: React.FC<ICardListProps> = (props) => {
                 }
             </div>
             <Pagination
-                paintings={filteredPaintings}
-                setCurrentItems={setCurrentItems}
                 darkMode={darkMode}
+                setCurrentPage={setCurrentPage}
+                currentPage={currentPage}
+                cardsPerList={cardsPerList}
+                listLength={listLength}
             />
         </div>
     );

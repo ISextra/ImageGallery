@@ -1,5 +1,7 @@
 export type PaintingsType = {
-    list: Array<PaintingType>
+    isLoading: boolean,
+    list: Array<PaintingType>,
+    totalCount: number,
 }
 
 export type PaintingType = {

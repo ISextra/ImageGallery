@@ -1,20 +1,17 @@
 import React from 'react';
+
+import {useAppSelector} from "../../app/hooks";
+
 import { Outlet } from "react-router-dom";
 import { Header } from "./Header/header";
+
 import "./wrapper.sass";
-import {useAppSelector} from "../../app/hooks";
 
 const Wrapper: React.FC = () => {
     const darkMode = useAppSelector(state => state.settings.darkMode) || {};
-
     return (
         <div
-            className="wrapper"
-            style={
-                darkMode === "light"
-                    ? {background: "white"}
-                    : {}
-            }
+            className={`wrapper wrapper-${darkMode}`}
         >
             <Header/>
             <Outlet/>
