@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import PopupInputDateInterval from "../../../shared/ui/selectInputDateInterval/popupInputDateInterval";
-import Dropdown from "../../../shared/ui/dropdown/dropdown";
+import PopupInputDateInterval from "../../../shared/ui/SelectInputDateInterval";
+import Dropdown from "../../../shared/ui/Dropdown";
 import {IFiltersDataType} from "../../../features/Filters/lib/types/intex";
 
 interface IInputDateIntervalProps {

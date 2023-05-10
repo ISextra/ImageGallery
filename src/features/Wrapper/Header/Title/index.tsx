@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import "./title.sass"
+import "./style.sass"
 import {useAppSelector} from "../../../../app/hooks";
 
 const Title: React.FC = () => {

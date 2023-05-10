@@ -7,25 +7,18 @@ import InputDateInterval from "../../../entities/paintings/ui/inputDateInterval"
 
 import {IFiltersDataType} from "../lib/types/intex";
 
-import './filters.sass'
+import './style.sass'
 
 interface IFiltersProps {
-    setFiltersState: React.Dispatch<React.SetStateAction<IFiltersDataType>>
+    filtersData: IFiltersDataType,
+    setFiltersData: React.Dispatch<React.SetStateAction<IFiltersDataType>>
 }
 
 export const Filters: React.FC<IFiltersProps> = (props) => {
-    const { setFiltersState } = props
-    const [filtersData, setFiltersData] = useState<IFiltersDataType>({
-        paintingName: null,
-        authorId: null,
-        locationId: null,
-        dateStart: null,
-        dateEnd: null
-    });
-
-    useEffect(() => {
-        setFiltersState(filtersData);
-    }, [filtersData])
+    const {
+        filtersData,
+        setFiltersData
+    } = props
 
     return (
         <div className="filters">

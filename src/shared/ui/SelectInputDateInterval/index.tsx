@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import './popupInputDateInterval.sass'
+import './style.sass'
 import {useAppSelector} from "../../../app/hooks";
 
 interface IPopupInputDateIntervalProps {

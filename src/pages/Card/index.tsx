@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useAppDispatch, useAppSelector} from "../../app/hooks";
 import {useParams} from "react-router-dom";
 
-import Card from "../../shared/ui/card/card";
+import Card from "../../shared/ui/Card";
 
 import {getLocationById} from "../../shared/libs/getlocationById";
 import {getAuthorById} from "../../shared/libs/getAuthorById";
@@ -13,7 +13,7 @@ import {getAuthors} from "../../entities/authors/api/getAuthors";
 import {AuthorType} from "../../entities/authors/model/types";
 import {LocationType} from "../../entities/locations/model/types";
 
-import "./cardPage.sass"
+import "./style.sass"
 
 const CardPage: React.FC = () => {
     const dispatch = useAppDispatch();

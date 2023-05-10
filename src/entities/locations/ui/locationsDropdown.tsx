@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { useAppSelector } from "../../../app/hooks";
-import Dropdown from "../../../shared/ui/dropdown/dropdown";
-import Popup from "../../../shared/ui/popup/popup";
+import Dropdown from "../../../shared/ui/Dropdown";
+import Popup from "../../../shared/ui/Popup";
 import {IFiltersDataType} from "../../../features/Filters/lib/types/intex";
 
 interface ILocationsDropdownProps {
@@ -51,6 +51,7 @@ const LocationsDropdown: React.FC<ILocationsDropdownProps> = (props) => {
             content={elementFromSelect}
             popupContent={
                 <Popup
+                    firstElement={defaultValue}
                     onElementClick={getElementFromSelect}
                     options={locations}
                 />

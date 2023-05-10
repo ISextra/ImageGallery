@@ -1,8 +1,8 @@
 import React from 'react';
-import './themeButton.sass'
+import './style.sass'
 import {useAppDispatch, useAppSelector} from "../../../../app/hooks";
 import {toggleDarkMode} from "../../../../shared/model/darkModeSlice";
-import Image from "../../../../shared/ui/image/image";
+import Image from "../../../../shared/ui/Image";
 
 
 const ThemeButton: React.FC = () => {

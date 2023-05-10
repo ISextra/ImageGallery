@@ -2,10 +2,10 @@ import React from 'react';
 import './index.sass';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import links from "../shared/constants/links";
-import Wrapper from "../features/Wrapper/wrapper";
-import HomePage from "../pages/Home/homePage";
-import CardPage from "../pages/Card/cardPage";
-import PageNotFound from "../pages/NotFound/pageNotFound";
+import Wrapper from "../features/Wrapper";
+import HomePage from "../pages/Home";
+import CardPage from "../pages/Card";
+import PageNotFound from "../pages/NotFound";
 import { Provider } from 'react-redux'
 import store from "./store"
 import axios from "axios";

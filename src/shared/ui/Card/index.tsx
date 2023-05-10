@@ -1,6 +1,6 @@
 import React, {MouseEventHandler} from 'react';
-import Image from "../image/image";
-import "./card.sass"
+import Image from "../Image";
+import "./style.sass"
 import {PaintingType} from "../../../entities/paintings/model/types";
 import {AuthorType} from "../../../entities/authors/model/types";
 import {LocationType} from "../../../entities/locations/model/types";

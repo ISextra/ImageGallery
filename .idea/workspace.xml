@@ -4,32 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-17] Добавление адаптива для всех страниц">
-      <change afterPath="$PROJECT_DIR$/src/entities/paintings/api/getPaintingsCount.ts" afterDir="false" />
+    <list default="true" id="ebb17894-0bd3-4731-a494-72d76abeec19" name="Changes" comment="[TASK-19] Подключение axios и использование rest api для пагинации, страницы карточки">
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/authors/ui/authorsDropdown.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/locations/ui/locationsDropdown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/paintings/api/getPaintings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/api/getPaintings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/paintings/model/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/model/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/lib/types/intex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/lib/types/intex.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Filters/ui/filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/filters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/ui/inputDateInterval.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputDateInterval.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/paintings/ui/inputPaintingName.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/ui/filters.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Filters/ui/filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Filters/ui/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ImageList/imageList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/themeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/ThemeButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/Title/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/Header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Wrapper/wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Wrapper/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/cardList/cardList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cardList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Card/cardPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Card/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/homePage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NotFound/pageNotFound.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFound/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NotFound/pageNotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFound/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Card/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Card/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Dropdown/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/dropdown/dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Dropdown/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/image/image.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Image/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Image/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/input/input.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Input/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/input/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Input/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Pagination/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/pagination/pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Pagination/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Popup/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/Popup/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/SelectInputDateInterval/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/selectInputDateInterval/popupInputDateInterval.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/SelectInputDateInterval/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +151,10 @@
       <workItem from="1682575074977" duration="35511000" />
       <workItem from="1682760125348" duration="13127000" />
       <workItem from="1682781938780" duration="4569000" />
-      <workItem from="1682962652685" duration="12096000" />
+      <workItem from="1682962652685" duration="16643000" />
+      <workItem from="1683099531048" duration="8527000" />
+      <workItem from="1683655950489" duration="1389000" />
+      <workItem from="1683704080625" duration="10355000" />
     </task>
     <task id="LOCAL-00001" summary="[TASK-1] Развернуть Git репозиторий для проекта">
       <created>1678897213079</created>
@@ -326,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682589925990</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="[TASK-19] Подключение axios и использование rest api для пагинации, страницы карточки">
+      <created>1683012135715</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1683012135715</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +379,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[TASK-3] NameFilter основа" />
     <MESSAGE value="[TASK-6] Реализация UI компонента с фильтров по датам (за основу взять компонент Dropdown)" />
     <MESSAGE value="[TASK-3] fetch setup" />
     <MESSAGE value="[TASK-3] add slices for locations and authors, add fetch for locations" />
@@ -378,7 +403,8 @@
     <MESSAGE value="[TASK-16] fix положения картики на странице карточки" />
     <MESSAGE value="[TASK-16] Добавление описания для карточки; удаление неиспользуемых зависимостей проекта" />
     <MESSAGE value="[TASK-17] Добавление адаптива для всех страниц" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TASK-17] Добавление адаптива для всех страниц" />
+    <MESSAGE value="[TASK-19] Подключение axios и использование rest api для пагинации, страницы карточки" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TASK-19] Подключение axios и использование rest api для пагинации, страницы карточки" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

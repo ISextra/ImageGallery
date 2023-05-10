@@ -3,9 +3,9 @@ import React from 'react';
 import {useAppSelector} from "../../app/hooks";
 
 import { Outlet } from "react-router-dom";
-import { Header } from "./Header/header";
+import { Header } from "./Header";
 
-import "./wrapper.sass";
+import "./style.sass";
 
 const Wrapper: React.FC = () => {
     const darkMode = useAppSelector(state => state.settings.darkMode) || {};

@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from "./pageNotFound.module.sass";
+import "./style.sass";
 
 const PageNotFound: React.FC = () => {
     return (
-        <div className={classes.notFound}>
+        <div className="notFound">
             Page Not Found
         </div>
     );

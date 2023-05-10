@@ -1,7 +1,7 @@
 import React from 'react';
-import './header.sass'
-import ThemeButton from './ThemeButton/themeButton'
-import Title from './Title/title'
+import './style.sass'
+import ThemeButton from './ThemeButton'
+import Title from './Title'
 
 export const Header: React.FC = () => {
     return (

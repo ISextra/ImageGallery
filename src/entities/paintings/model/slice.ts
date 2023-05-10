@@ -7,7 +7,7 @@ const paintingsSlice = createSlice({
     initialState: {
         isLoading: true,
         list: [],
-        totalCount: 10,
+        totalCount: 0,
     },
     reducers: {
     },

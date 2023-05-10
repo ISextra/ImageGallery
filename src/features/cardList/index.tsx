@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {useAppDispatch, useAppSelector} from "../../app/hooks";
 
-import Card from "../../shared/ui/card/card";
-import Pagination from "../../shared/ui/pagination/pagination";
+import Card from "../../shared/ui/Card";
+import Pagination from "../../shared/ui/Pagination";
 
 import {getLocationById} from "../../shared/libs/getlocationById";
 import {getAuthorById} from "../../shared/libs/getAuthorById";
@@ -11,7 +11,7 @@ import {getPaintingsCount} from "../../entities/paintings/api/getPaintingsCount"
 
 import {IFiltersDataType} from "../Filters/lib/types/intex";
 
-import "./cardList.sass"
+import "./style.sass"
 
 interface ICardListProps {
     filtersData: IFiltersDataType,
@@ -32,20 +32,6 @@ const CardList: React.FC<ICardListProps> = (props) => {
     const cardsPerList = 12;
 
     useEffect(() => {
-        setCurrentPage(1);
-    }, [filtersData])
-
-    useEffect(() => {
-        dispatch(getPaintings({
-            q: filtersData.paintingName,
-            authorId: filtersData.authorId,
-            locationId: filtersData.locationId,
-            created_gte: filtersData.dateStart,
-            created_lte: filtersData.dateEnd,
-            _page: currentPage,
-            _limit: cardsPerList,
-        }));
-
         dispatch(getPaintingsCount({
             q: filtersData.paintingName,
             authorId: filtersData.authorId,
@@ -53,8 +39,22 @@ const CardList: React.FC<ICardListProps> = (props) => {
             created_gte: filtersData.dateStart,
             created_lte: filtersData.dateEnd,
         }));
+        fetchPaintings(1);
+    }, [filtersData]);
 
-    }, [dispatch, filtersData, currentPage])
+
+    const fetchPaintings = (page: number) => {
+        dispatch(getPaintings({
+            q: filtersData.paintingName,
+            authorId: filtersData.authorId,
+            locationId: filtersData.locationId,
+            created_gte: filtersData.dateStart,
+            created_lte: filtersData.dateEnd,
+            _page: page,
+            _limit: cardsPerList,
+        }));
+        setCurrentPage(page);
+    }
 
     return (
         <div>
@@ -78,7 +78,7 @@ const CardList: React.FC<ICardListProps> = (props) => {
             </div>
             <Pagination
                 darkMode={darkMode}
-                setCurrentPage={setCurrentPage}
+                fetchPaintings={fetchPaintings}
                 currentPage={currentPage}
                 cardsPerList={cardsPerList}
                 listLength={listLength}

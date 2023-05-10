@@ -1,5 +1,5 @@
 import React from 'react';
-import "./image.sass"
+import "./style.sass"
 
 interface IImageProps {
     src: string,

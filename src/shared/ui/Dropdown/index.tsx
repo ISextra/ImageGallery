@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './dropdown.sass'
+import './style.sass'
 import {useAppSelector} from "../../../app/hooks";
 interface DropdownFilterProps {
     content: string | undefined;

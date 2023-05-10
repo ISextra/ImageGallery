@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import Input from "../../../shared/ui/input/input";
+import Input from "../../../shared/ui/Input";
 import {IFiltersDataType} from "../../../features/Filters/lib/types/intex";
 
 interface IInputPaintingNameProps {
@@ -13,10 +13,14 @@ const InputPaintingName: React.FC<IInputPaintingNameProps> = (props) => {
         setFiltersState,
     } = props
 
-    const [paintingName, setPaintingName] = useState("");
+    const defaultValue = "Наименование";
+    const localStorageFiltersData = JSON.parse(localStorage.getItem('imageGalleryFiltersData') || '{}');
+    const inputContent = localStorageFiltersData.paintingName || "";
+
+    const [paintingName, setPaintingName] = useState(inputContent);
 
     useEffect(() => {
-        if (paintingName === "") {
+        if (paintingName === defaultValue) {
             setFiltersState({
                 ...filtersData,
                 paintingName: null,
@@ -30,10 +34,13 @@ const InputPaintingName: React.FC<IInputPaintingNameProps> = (props) => {
             paintingName: paintingName,
         });
     }, [paintingName]);
+    // TODO убрать, добавить const onChange = (name, value) в родителя, вызвать в child
+
 
     return (
         <Input
-            content="Наименование"
+            defaultValue={defaultValue}
+            content={paintingName}
             dataOnChange={setPaintingName}
         />
     );
